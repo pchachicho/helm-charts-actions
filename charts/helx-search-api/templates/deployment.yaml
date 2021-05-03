@@ -34,7 +34,7 @@ spec:
         command: [
                    "python",
                    "-m",
-                   "dug.helx-search-api",
+                   "dug.api",
                    {{- if .Values.web.debug }}
                    "--debug",
                    {{- end }}

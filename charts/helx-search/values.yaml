@@ -80,7 +80,7 @@ airflow:
   workers:
     enabled: false
 
-api:
+helx-search-api:
   enabled: true
   web:
     deployment:
@@ -191,7 +191,7 @@ tranql:
   redis:
     existingSecret: helx-search-redis-secret
 
-ui:
+helx-search-ui:
   enabled: true
   extraEnv:
     - name: PUBLIC_URL

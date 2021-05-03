@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  api:
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: "2021-05-03T12:09:56.002343-04:00"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.12.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.0.0
+    description: A Helm chart for Kubernetes
+    digest: aac9ba0b6f5660aafe7b53e47c597fea1225e1885ce54e6025e7cc3b43832100
+    name: api
+    type: application
+    urls:
+    - https://cschreep.github.io/charts/api-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-05-03T12:09:55.997-04:00"

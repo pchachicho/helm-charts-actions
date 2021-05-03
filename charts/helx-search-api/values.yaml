@@ -1,0 +1,30 @@
+web:
+  appName: helx-search-api
+  deployment:
+    apiPort: 5551
+    apiWorkers: 4
+    apiTimeout: 10
+    extraEnv: []
+    logLevel: INFO
+    image:
+      repository: helxplatform/dug
+      tag: "2.0.1"
+      pullPolicy: IfNotPresent
+    imagePullSecrets: []
+    resources: {}
+  service:
+    name: helx-search-api
+    type: ClusterIP
+    annotations: {}
+    apiPort: "5551"
+  debug: false
+
+elasticsearch:
+  enabled: true
+
+redis:
+  enabled: true
+
+nboost:
+  enabled: false
+  host: helx-search-api-nboost

@@ -1,9 +1,9 @@
 apiVersion: v1
 entries:
-  api:
+  helx-search-api:
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-05-03T12:09:56.002343-04:00"
+    created: "2021-05-03T14:53:01.688476-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -14,10 +14,21 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: 13.0.0
     description: A Helm chart for Kubernetes
-    digest: aac9ba0b6f5660aafe7b53e47c597fea1225e1885ce54e6025e7cc3b43832100
-    name: api
+    digest: 37cbff296a03146469937dd2cb678b5cb6ba8b106894254f9a1215e10d4bf571
+    name: helx-search-api
     type: application
     urls:
-    - https://cschreep.github.io/charts/api-0.1.0.tgz
+    - https://cschreep.github.io/charts/helx-search-api-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-03T12:09:55.997-04:00"
+  helx-search-ui:
+  - apiVersion: v2
+    appVersion: 1.1.1-dev
+    created: "2021-05-03T14:53:01.689236-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 9c69f7508dfc62ca36efe2fddb3b1282ea1f93cc93fee1e38e09f787e266dc00
+    name: helx-search-ui
+    type: application
+    urls:
+    - https://cschreep.github.io/charts/helx-search-ui-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-05-03T14:53:01.679722-04:00"

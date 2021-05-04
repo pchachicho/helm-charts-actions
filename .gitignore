@@ -1,4 +1,7 @@
 # IntelliJ
 .idea
 
+.env
 env/
+
+.DS_Store

@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   helx-search:
   - apiVersion: v2
-    created: "2021-05-04T12:23:40.508907-04:00"
+    created: "2021-05-04T13:19:51.718344-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -38,7 +38,7 @@ entries:
   helx-search-api:
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-05-04T12:23:40.514576-04:00"
+    created: "2021-05-04T13:19:51.723349-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -58,12 +58,12 @@ entries:
   helx-search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-05-04T12:23:40.514846-04:00"
+    created: "2021-05-04T13:19:51.72363-04:00"
     description: A Helm chart for Kubernetes
-    digest: 9c69f7508dfc62ca36efe2fddb3b1282ea1f93cc93fee1e38e09f787e266dc00
+    digest: e53444d399fa698e0a9a9d3da0e53e9f53b0194fb23690cdea92cbea1dd98cbb
     name: helx-search-ui
     type: application
     urls:
     - https://cschreep.github.io/charts/helx-search-ui-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-04T12:23:40.489259-04:00"
+generated: "2021-05-04T13:19:51.698662-04:00"

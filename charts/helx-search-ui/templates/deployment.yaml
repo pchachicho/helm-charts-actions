@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: {{ .Values.app_name }}
-  name: {{ include "helx-search.search_client.fullname" . }}
+  name: {{ include "search-ui.fullname" . }}
 spec:
   replicas: 1
   selector:
@@ -21,7 +21,7 @@ spec:
       containers:
       - image: {{ .Values.image.repository }}:{{ .Chart.AppVersion }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-        name: {{ include "helx-search.search_client.fullname" . }}-container
+        name: {{ include "search-ui.fullname" . }}-container
         ports:
           - containerPort: {{ .Values.container_port }}
         env:

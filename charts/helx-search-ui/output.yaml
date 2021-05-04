@@ -1,0 +1,60 @@
+---
+# Source: helx-search-ui/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+  
+    getambassador.io/config: |-
+      ---
+      apiVersion: ambassador/v1
+      kind: Mapping
+      name: helx-search-ui
+      prefix: /ui
+      service:RELEASE-NAME-helx-search-ui:8080
+  labels:
+    app: helx-search-ui
+  name: RELEASE-NAME-helx-search-ui
+spec:
+  ports:
+    - name: search-client-port
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: helx-search-ui
+  type: ClusterIP
+---
+# Source: helx-search-ui/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: helx-search-ui
+  name: RELEASE-NAME-helx-search-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helx-search-ui
+  template:
+    metadata:
+      labels:
+        app: helx-search-ui
+    spec:
+      containers:
+      - image: cschreep/helx-search-ui:1.1.1-dev
+        imagePullPolicy: Always
+        name: RELEASE-NAME-helx-search-ui-container
+        ports:
+          - containerPort: 8080
+        env:
+          - name: REACT_APP_DUG_URL
+            value: http://localhost:5551
+        resources:
+          limits:
+            cpu: 200m
+            memory: 320Mi
+          requests:
+            cpu: 50m
+            memory: 64Mi

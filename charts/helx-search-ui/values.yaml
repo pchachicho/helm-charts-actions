@@ -19,7 +19,7 @@ resources:
     cpu: 50m
     memory: 64Mi
 enabled: true
-app_name: ui
+app_name: helx-search-ui
 
 api_url: "http://localhost:5551"
 node_env: development

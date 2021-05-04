@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   helx-search:
   - apiVersion: v2
-    created: "2021-05-03T15:29:24.877809-04:00"
+    created: "2021-05-04T11:52:36.083292-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -38,7 +38,7 @@ entries:
   helx-search-api:
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-05-03T15:29:24.883584-04:00"
+    created: "2021-05-04T11:52:36.088456-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -49,7 +49,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: 13.0.0
     description: A Helm chart for Kubernetes
-    digest: 27c2224c32b9244f93b06076e9d54db8134caa2bfa2578a324d43ed6d03a306a
+    digest: ce8f04b0bee88886dfc20f9f7183ff4b133c88100498fc794b961c851c8f1da2
     name: helx-search-api
     type: application
     urls:
@@ -58,7 +58,7 @@ entries:
   helx-search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-05-03T15:29:24.884217-04:00"
+    created: "2021-05-04T11:52:36.089415-04:00"
     description: A Helm chart for Kubernetes
     digest: 9c69f7508dfc62ca36efe2fddb3b1282ea1f93cc93fee1e38e09f787e266dc00
     name: helx-search-ui
@@ -66,4 +66,4 @@ entries:
     urls:
     - https://cschreep.github.io/charts/helx-search-ui-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-03T15:29:24.85776-04:00"
+generated: "2021-05-04T11:52:36.061914-04:00"

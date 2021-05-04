@@ -1,13 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  {{- if .Values.web.service.annotations }}
-  annotations: {{ toYaml .Values.web.service.annotations }}
-  {{- end }}
+  annotations:
+  {{ tpl (toYaml .Values.web.service.annotations) . | nindent 4}}
   labels:
     app: {{ .Values.web.appName }}
     {{- include "api.labels" . | nindent 4 }}
-  name: {{ .Values.web.service.name }}
   name: {{ include "api.web.fullname" . }}
 spec:
   ports:

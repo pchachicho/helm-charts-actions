@@ -2,7 +2,7 @@ dependencies:
 - name: airflow
   repository: https://airflow-helm.github.io/charts
   version: 8.0.9
-- name: helx-search-api
+- name: search-api
   repository: https://cschreep.github.io/charts/
   version: 0.1.0
 - name: elasticsearch
@@ -14,8 +14,8 @@ dependencies:
 - name: tranql
   repository: ""
   version: 0.1.0
-- name: helx-search-ui
+- name: search-ui
   repository: https://cschreep.github.io/charts/
   version: 0.1.0
-digest: sha256:7436b206ef82103c9e358a380c7a6ad770e5e3373d6f513e797cb19ad2952564
-generated: "2021-05-03T14:55:13.799169-04:00"
+digest: sha256:4fa94157c704bf2635f5f40e286f0640f937e614e1a2cd912cb8684af859622e
+generated: "2021-05-04T16:29:32.798692-04:00"

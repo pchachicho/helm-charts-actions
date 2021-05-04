@@ -1,21 +1,16 @@
+{{- if ".Values.airflow-wrapper.enabled" }}
 kind: Service
 apiVersion: v1
 metadata:
-  name: {{ include "roger.fullname" . }}-airflow-ui-svc
+  name: {{ include "search.fullname" . }}-airflow
   labels:
     app: airflow
     component: web
     release: {{ .Release.Name }}
+  {{- if .Values.airflowWrapper.annotations }}
   annotations:
-    getambassador.io/config: |
-      ---
-      apiVersion: ambassador/v1
-      kind: Mapping
-      name: {{ .Values.web.ambassador.airflowUI.map_name }}
-      prefix: {{ .Values.web.ambassador.airflowUI.prefix }}
-      service: {{ include "roger.fullname" . }}-airflow-ui-svc:8080
-      rewrite: {{ .Values.web.ambassador.airflowUI.rewrite }}
-
+    {{ tpl (toYaml .Values.airflowWrapper.annotations) . | nindent 4}}
+  {{- end }}
 spec:
   ports:
     - name: web
@@ -27,4 +22,4 @@ spec:
     component: web
     release: {{ .Release.Name }}
   type: ClusterIP
-
+{{- end }}

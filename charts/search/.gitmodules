@@ -1,3 +1,0 @@
-[submodule "charts/api"]
-	path = charts/api
-	url = git@github.com:cschreep/helx-search-api-chart.git

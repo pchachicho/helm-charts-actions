@@ -15,32 +15,32 @@ airflow:
         - name: REDIS_GRAPH
           value: test
         - name: REDIS_HOST
-          value: helx-search-redis-master
+          value: search-redis-master
         - name: REDIS_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: helx-search-redis-secret
+              name: search-redis-secret
               key: password
         - name: ROGER_DATA_DIR
           value: "/opt/airflow/share/data"
         - name: DUG_LOG_LEVEL
           value: DEBUG
         - name: ELASTIC_API_HOST
-          value: helx-search-elasticsearch-master
+          value: search-elasticsearch-master
         - name: ELASTIC_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: helx-search-elastic-secret
+              name: search-elastic-secret
               key: password
         - name: ELASTIC_USER
           valueFrom:
             secretKeyRef:
-              name: helx-search-elastic-secret
+              name: search-elastic-secret
               key: username
         - name: NBOOST_API_HOST
           value: nboost $ TODO compute this
         - name: TRANQL_API_HOST
-          value: helx-search-tranql-service
+          value: search-tranql-service
         - name: TRANQL_API_PORT
           value: "8081"
     extraVolumeMounts:
@@ -49,7 +49,7 @@ airflow:
     extraVolumes:
       - name: airflow-data
         persistentVolumeClaim:
-          claimName: helx-search-data
+          claimName: search-data
 
   dags:
     gitSync:
@@ -72,41 +72,43 @@ airflow:
     enabled: false
 
   externalRedis:
-    host: helx-search-redis-master
-    passwordSecret: helx-search-redis-secret
+    host: search-redis-master
+    passwordSecret: search-redis-secret
     passwordSecretKey: password
+
   flower:
     enabled: false
+
   workers:
     enabled: false
 
-helx-search-api:
+search-api:
   enabled: true
   web:
     deployment:
       extraEnv:
         - name: ELASTIC_API_HOST
-          value: helx-search-elasticsearch-master
+          value: search-elasticsearch-master
         - name: ELASTIC_API_PORT
           value: "9200"
         - name: ELASTIC_USERNAME
           valueFrom:
             secretKeyRef:
-              name: helx-search-elastic-secret
+              name: search-elastic-secret
               key: username
         - name: ELASTIC_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: helx-search-elastic-secret
+              name: search-elastic-secret
               key: password
         - name: REDIS_HOST
-          value: helx-search-redis-master
+          value: search-redis-master
         - name: REDIS_PORT
           value: "6379"
         - name: REDIS_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: helx-search-redis-secret
+              name: search-redis-secret
               key: password
         - name: NBOOST_API_HOST
           value: ""
@@ -118,17 +120,17 @@ helx-search-api:
 elasticsearch:
   enabled: true
   imageTag: "7.12.0"
-  clusterName: helx-search-elasticsearch
+  clusterName: search-elasticsearch
   extraEnvs:
     - name: ELASTIC_PASSWORD
       valueFrom:
         secretKeyRef:
-          name: helx-search-elastic-secret
+          name: search-elastic-secret
           key: password
     - name: ELASTIC_USERNAME
       valueFrom:
         secretKeyRef:
-          name: helx-search-elastic-secret
+          name: search-elastic-secret
           key: username
 
 nboost:
@@ -140,7 +142,7 @@ persistence:
 redis:
   enabled: true
   usePassword: true
-  existingSecret: helx-search-redis-secret
+  existingSecret: search-redis-secret
   existingSecretPasswordKey: password
   image:
     repository: redislabs/redisgraph
@@ -180,18 +182,18 @@ redis:
 
 secrets:
   elastic:
-    name: helx-search-elastic-secret
+    name: search-elastic-secret
     elastic_user: elastic
   redis:
-    name: helx-search-redis-secret
+    name: search-redis-secret
 
 tranql:
   enabled: true
   annotations: {}
   redis:
-    existingSecret: helx-search-redis-secret
+    existingSecret: search-redis-secret
 
-helx-search-ui:
+search-ui:
   enabled: true
   extraEnv:
     - name: PUBLIC_URL

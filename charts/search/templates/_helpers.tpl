@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "helx-search.name" -}}
+{{- define "search.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "helx-search.fullname" -}}
+{{- define "search.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,16 +26,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "helx-search.chart" -}}
+{{- define "search.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "helx-search.labels" -}}
-helm.sh/chart: {{ include "helx-search.chart" . }}
-{{ include "helx-search.selectorLabels" . }}
+{{- define "search.labels" -}}
+helm.sh/chart: {{ include "search.chart" . }}
+{{ include "search.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -45,7 +45,7 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "helx-search.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "helx-search.name" . }}
+{{- define "search.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "search.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}

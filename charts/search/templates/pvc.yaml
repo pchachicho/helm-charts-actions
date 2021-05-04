@@ -1,8 +1,8 @@
-{{- if not (lookup "v1" "PersistentVolumeClaim" .Release.Namespace ( "helx-search-data" )) }}
+{{- if not (lookup "v1" "PersistentVolumeClaim" .Release.Namespace ( "search-data" )) }}
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: helx-search-data
+  name: search-data
   # Prevents deletion on helm uninstall.
   annotations:
     "helm.sh/resource-policy": keep

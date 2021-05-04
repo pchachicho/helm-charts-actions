@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   helx-search:
   - apiVersion: v2
-    created: "2021-05-04T16:26:24.666783-04:00"
+    created: "2021-05-04T17:11:39.428132-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -38,7 +38,7 @@ entries:
   helx-search-api:
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-05-04T16:26:24.678746-04:00"
+    created: "2021-05-04T17:11:39.433286-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -58,7 +58,7 @@ entries:
   helx-search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-05-04T16:26:24.679808-04:00"
+    created: "2021-05-04T17:11:39.433569-04:00"
     description: A Helm chart for Kubernetes
     digest: e53444d399fa698e0a9a9d3da0e53e9f53b0194fb23690cdea92cbea1dd98cbb
     name: helx-search-ui
@@ -66,10 +66,45 @@ entries:
     urls:
     - https://cschreep.github.io/charts/helx-search-ui-0.1.0.tgz
     version: 0.1.0
+  search:
+  - apiVersion: v2
+    created: "2021-05-04T17:11:39.452036-04:00"
+    dependencies:
+    - condition: airflow.enabled
+      name: airflow
+      repository: https://airflow-helm.github.io/charts
+      version: 8.0.9
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.12.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.0.0
+    - condition: api.enabled
+      name: search-api
+      repository: https://cschreep.github.io/charts/
+      version: 0.1.0
+    - condition: search-ui.enabled
+      name: search-ui
+      repository: https://cschreep.github.io/charts/
+      version: 0.1.0
+    - condition: tranql.enabled
+      name: tranql
+      repository: ""
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: 362266d3e1f63226900456ac50bdfdbd6ef2cc9fb455a6a678e5aeb73e99fc24
+    name: search
+    type: application
+    urls:
+    - https://cschreep.github.io/charts/search-0.1.0.tgz
+    version: 0.1.0
   search-api:
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-05-04T16:26:24.68836-04:00"
+    created: "2021-05-04T17:11:39.457921-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -89,7 +124,7 @@ entries:
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-05-04T16:26:24.68873-04:00"
+    created: "2021-05-04T17:11:39.458204-04:00"
     description: A Helm chart for Kubernetes
     digest: 16957059f92e971ea99b17153457f6c239a4f4b146bd0136bda0e8529c26c8c4
     name: search-ui
@@ -97,4 +132,4 @@ entries:
     urls:
     - https://cschreep.github.io/charts/search-ui-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-04T16:26:24.643548-04:00"
+generated: "2021-05-04T17:11:39.408291-04:00"

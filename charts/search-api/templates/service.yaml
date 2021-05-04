@@ -1,15 +1,17 @@
 apiVersion: v1
 kind: Service
 metadata:
+  {{- if .Values.web.service.annotations }}
   annotations:
-  {{ tpl (toYaml .Values.web.service.annotations) . | nindent 4}}
+    {{- tpl (toYaml .Values.web.service.annotations) . | nindent 4}}
+  {{- end }}
   labels:
     app: {{ .Values.web.appName }}
-    {{- include "api.labels" . | nindent 4 }}
-  name: {{ include "api.web.fullname" . }}
+    {{- include "search-api.labels" . | nindent 4 }}
+  name: {{ include "search-api.web.fullname" . }}
 spec:
   ports:
-    - name: helx-search-api-port
+    - name: api-port
       protocol: TCP
       port: {{ .Values.web.service.apiPort }}
       targetPort: {{ .Values.web.deployment.apiPort }}

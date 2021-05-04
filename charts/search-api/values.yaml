@@ -1,5 +1,5 @@
 web:
-  appName: helx-search-api
+  appName: webserver
   deployment:
     apiPort: 5551
     apiWorkers: 4
@@ -13,7 +13,7 @@ web:
     imagePullSecrets: []
     resources: {}
   service:
-    name: helx-search-api
+    name: search-api
     type: ClusterIP
     annotations: {}
     apiPort: "5551"
@@ -27,4 +27,4 @@ redis:
 
 nboost:
   enabled: false
-  host: helx-search-api-nboost
+  host: api-nboost

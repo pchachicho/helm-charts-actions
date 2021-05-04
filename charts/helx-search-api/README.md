@@ -1,1 +1,0 @@
-# helx-search-api-chart

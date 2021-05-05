@@ -2,3 +2,6 @@
 	path = charts/search-api
 	url = git@github.com:cschreep/search-api-chart.git
 
+[submodule "charts/search-ui"]
+	path = charts/search-ui
+	url = git@github.com:cschreep/search-ui-chart.git

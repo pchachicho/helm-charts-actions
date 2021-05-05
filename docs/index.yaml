@@ -1,44 +1,9 @@
 apiVersion: v1
 entries:
-  search:
-  - apiVersion: v2
-    created: "2021-05-04T17:17:30.651533-04:00"
-    dependencies:
-    - condition: airflow.enabled
-      name: airflow
-      repository: https://airflow-helm.github.io/charts
-      version: 8.0.9
-    - condition: elasticsearch.enabled
-      name: elasticsearch
-      repository: https://helm.elastic.co
-      version: 7.12.0
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: 13.0.0
-    - condition: api.enabled
-      name: search-api
-      repository: https://cschreep.github.io/charts/
-      version: 0.1.0
-    - condition: search-ui.enabled
-      name: search-ui
-      repository: https://cschreep.github.io/charts/
-      version: 0.1.0
-    - condition: tranql.enabled
-      name: tranql
-      repository: ""
-      version: 0.1.0
-    description: A Helm chart for Kubernetes
-    digest: 362266d3e1f63226900456ac50bdfdbd6ef2cc9fb455a6a678e5aeb73e99fc24
-    name: search
-    type: application
-    urls:
-    - https://cschreep.github.io/charts/search-0.1.0.tgz
-    version: 0.1.0
   search-api:
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-05-04T17:17:30.65786-04:00"
+    created: "2021-05-05T15:31:32.234157-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -49,21 +14,21 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: 13.0.0
     description: A Helm chart for Kubernetes
-    digest: aff442540f0cce225f1d020c060882adc0752a0e4d59b9e73c67bdbc1a83a4a2
+    digest: 3883c62c448bbab0ec50a8cce41fac8be66a757d5fa96c29c4dd5d872bba6256
     name: search-api
     type: application
     urls:
-    - https://cschreep.github.io/charts/search-api-0.1.0.tgz
+    - search-api-0.1.0.tgz
     version: 0.1.0
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-05-04T17:17:30.658178-04:00"
+    created: "2021-05-05T15:31:32.235401-04:00"
     description: A Helm chart for Kubernetes
     digest: 16957059f92e971ea99b17153457f6c239a4f4b146bd0136bda0e8529c26c8c4
     name: search-ui
     type: application
     urls:
-    - https://cschreep.github.io/charts/search-ui-0.1.0.tgz
+    - search-ui-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-04T17:17:30.632496-04:00"
+generated: "2021-05-05T15:31:32.228709-04:00"

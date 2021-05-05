@@ -1,0 +1,4 @@
+[submodule "charts/search-api"]
+	path = charts/search-api
+	url = git@github.com:cschreep/search-api-chart.git
+

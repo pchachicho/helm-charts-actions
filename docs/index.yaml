@@ -2,8 +2,27 @@ apiVersion: v1
 entries:
   search-api:
   - apiVersion: v2
+    appVersion: 2.1.0
+    created: "2021-05-14T12:12:12.756209-04:00"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.12.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.0.0
+    description: A Helm chart for Kubernetes
+    digest: f214d0cf07623eea2b2e157bff8cd9bd3d24758c27ec045b16a6bd154d6b195a
+    name: search-api
+    type: application
+    urls:
+    - https://cschreep.github.io/charts/search-api-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-05-06T10:47:30.423099-04:00"
+    created: "2021-05-14T12:12:12.747878-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -22,7 +41,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-05-06T10:47:30.417179-04:00"
+    created: "2021-05-14T12:12:12.738609-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -42,7 +61,7 @@ entries:
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-05-06T10:47:30.424614-04:00"
+    created: "2021-05-14T12:12:12.757135-04:00"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
@@ -50,4 +69,4 @@ entries:
     urls:
     - https://cschreep.github.io/charts/search-ui-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-06T10:47:30.410807-04:00"
+generated: "2021-05-14T12:12:12.729358-04:00"

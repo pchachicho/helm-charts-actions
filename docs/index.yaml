@@ -1,9 +1,45 @@
 apiVersion: v1
 entries:
+  search:
+  - apiVersion: v2
+    created: "2021-06-18T14:01:27.237185-04:00"
+    dependencies:
+    - condition: airflow.enabled
+      name: airflow
+      repository: https://airflow-helm.github.io/charts
+      version: 8.0.9
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.12.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.0.0
+    - condition: api.enabled
+      name: search-api
+      repository: https://helx-charts.github.io/charts/
+      version: 0.1.1
+    - condition: search-ui.enabled
+      name: search-ui
+      repository: https://helx-charts.github.io/charts/
+      version: 0.1.0
+    - condition: tranql.enabled
+      name: tranql
+      repository: https://yaphetkg.github.io
+      version: 0.1.2
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
+    digest: a824ad3f546fdccf3c0a44ba904b7ff7fd92639c85a42d7e439b79607590d752
+    name: search
+    type: application
+    urls:
+    - https://helx-charts.github.io/charts/search-1.0.0.tgz
+    version: 1.0.0
   search-api:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-06-10T16:19:46.396699-04:00"
+    created: "2021-06-18T14:01:27.257803-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -18,11 +54,11 @@ entries:
     name: search-api
     type: application
     urls:
-    - search-api-0.2.0.tgz
+    - https://helx-charts.github.io/charts/search-api-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-06-10T16:19:46.391095-04:00"
+    created: "2021-06-18T14:01:27.251438-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -37,11 +73,11 @@ entries:
     name: search-api
     type: application
     urls:
-    - search-api-0.1.1.tgz
+    - https://helx-charts.github.io/charts/search-api-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-06-10T16:19:46.385175-04:00"
+    created: "2021-06-18T14:01:27.244566-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -56,17 +92,17 @@ entries:
     name: search-api
     type: application
     urls:
-    - search-api-0.1.0.tgz
+    - https://helx-charts.github.io/charts/search-api-0.1.0.tgz
     version: 0.1.0
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-06-10T16:19:46.396989-04:00"
+    created: "2021-06-18T14:01:27.258673-04:00"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
     type: application
     urls:
-    - search-ui-0.1.0.tgz
+    - https://helx-charts.github.io/charts/search-ui-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-10T16:19:46.379573-04:00"
+generated: "2021-06-18T14:01:27.206356-04:00"

@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   search:
   - apiVersion: v2
-    created: "2021-06-18T14:01:27.237185-04:00"
+    created: "2021-06-18T14:06:38.313922-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -39,7 +39,7 @@ entries:
   search-api:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-06-18T14:01:27.257803-04:00"
+    created: "2021-06-18T14:06:38.338781-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -58,7 +58,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-06-18T14:01:27.251438-04:00"
+    created: "2021-06-18T14:06:38.331681-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -77,7 +77,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-06-18T14:01:27.244566-04:00"
+    created: "2021-06-18T14:06:38.321567-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -97,7 +97,7 @@ entries:
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-06-18T14:01:27.258673-04:00"
+    created: "2021-06-18T14:06:38.33951-04:00"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
@@ -105,4 +105,20 @@ entries:
     urls:
     - https://helx-charts.github.io/charts/search-ui-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-18T14:01:27.206356-04:00"
+  tranql:
+  - apiVersion: v2
+    appVersion: develop-0.0.58
+    created: "2021-06-18T14:06:38.343395-04:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.0.0
+    description: Tranql helm chart.
+    digest: 93323d8911563c26d79758268ad23b77584c2c061d79a78e1af88b807e1ecea3
+    name: tranql
+    type: application
+    urls:
+    - https://helx-charts.github.io/charts/tranql-0.1.1.tgz
+    version: 0.1.1
+generated: "2021-06-18T14:06:38.27874-04:00"

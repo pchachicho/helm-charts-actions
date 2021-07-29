@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   search:
   - apiVersion: v2
-    created: "2021-07-13T11:14:44.701633-04:00"
+    created: "2021-07-29T12:22:03.145827-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -29,7 +29,7 @@ entries:
     - https://helx-charts.github.io/charts/search-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-07-13T11:14:44.67902-04:00"
+    created: "2021-07-29T12:22:03.1252312-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -56,7 +56,7 @@ entries:
     - https://helx-charts.github.io/charts/search-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2021-07-13T11:14:44.650984-04:00"
+    created: "2021-07-29T12:22:03.1027549-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -85,7 +85,7 @@ entries:
   search-api:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-07-13T11:14:44.719843-04:00"
+    created: "2021-07-29T12:22:03.1623933-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -104,7 +104,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-07-13T11:14:44.713627-04:00"
+    created: "2021-07-29T12:22:03.1565632-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -123,7 +123,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-07-13T11:14:44.708114-04:00"
+    created: "2021-07-29T12:22:03.1516884-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -143,7 +143,7 @@ entries:
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-07-13T11:14:44.721314-04:00"
+    created: "2021-07-29T12:22:03.1623933-04:00"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
@@ -153,8 +153,23 @@ entries:
     version: 0.1.0
   tranql:
   - apiVersion: v2
+    appVersion: develop-0.0.63
+    created: "2021-07-29T12:22:03.1731546-04:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.0.0
+    description: A Helm chart for Kubernetes
+    digest: 82fe5609f9605b0b70887068c1a189218c8fdd980807f24f8353805d0402daba
+    name: tranql
+    type: application
+    urls:
+    - https://helx-charts.github.io/charts/tranql-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
     appVersion: develop-0.0.59
-    created: "2021-07-13T11:14:44.73055-04:00"
+    created: "2021-07-29T12:22:03.1702277-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -169,7 +184,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: develop-0.0.58
-    created: "2021-07-13T11:14:44.725685-04:00"
+    created: "2021-07-29T12:22:03.1653214-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -182,4 +197,4 @@ entries:
     urls:
     - https://helx-charts.github.io/charts/tranql-0.1.1.tgz
     version: 0.1.1
-generated: "2021-07-13T11:14:44.621976-04:00"
+generated: "2021-07-29T12:22:03.0802298-04:00"

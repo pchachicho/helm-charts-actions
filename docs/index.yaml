@@ -2,7 +2,34 @@ apiVersion: v1
 entries:
   search:
   - apiVersion: v2
-    created: "2021-07-29T12:22:03.145827-04:00"
+    created: "2021-07-29T12:24:07.4382375-04:00"
+    dependencies:
+    - condition: airflow.enabled
+      name: airflow
+      repository: https://airflow-helm.github.io/charts
+      version: 8.1.3
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.12.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.0.0
+    - condition: tranql.enabled
+      name: tranql
+      repository: https://helx-charts.github.io/charts/
+      version: 0.1.3
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
+    digest: a4ed1711da0445b948d9f753f048b54178dba0ae4fd4095c277e5ce2d7a69137
+    name: search
+    type: application
+    urls:
+    - https://helx-charts.github.io/charts/search-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    created: "2021-07-29T12:24:07.4167401-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -29,7 +56,7 @@ entries:
     - https://helx-charts.github.io/charts/search-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-07-29T12:22:03.1252312-04:00"
+    created: "2021-07-29T12:24:07.3937585-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -56,7 +83,7 @@ entries:
     - https://helx-charts.github.io/charts/search-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2021-07-29T12:22:03.1027549-04:00"
+    created: "2021-07-29T12:24:07.3708042-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -85,7 +112,7 @@ entries:
   search-api:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-07-29T12:22:03.1623933-04:00"
+    created: "2021-07-29T12:24:07.454343-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -104,7 +131,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-07-29T12:22:03.1565632-04:00"
+    created: "2021-07-29T12:24:07.4489585-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -123,7 +150,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-07-29T12:22:03.1516884-04:00"
+    created: "2021-07-29T12:24:07.4440776-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -143,7 +170,7 @@ entries:
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-07-29T12:22:03.1623933-04:00"
+    created: "2021-07-29T12:24:07.454343-04:00"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
@@ -154,7 +181,7 @@ entries:
   tranql:
   - apiVersion: v2
     appVersion: develop-0.0.63
-    created: "2021-07-29T12:22:03.1731546-04:00"
+    created: "2021-07-29T12:24:07.472887-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -168,8 +195,23 @@ entries:
     - https://helx-charts.github.io/charts/tranql-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
+    appVersion: develop-0.0.62
+    created: "2021-07-29T12:24:07.4660549-04:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.0.0
+    description: A Helm chart for Kubernetes
+    digest: fdbd3a98131e88aaa8b8008fec4b5eae71ea4bec08137a71d6a04be178a992eb
+    name: tranql
+    type: application
+    urls:
+    - https://helx-charts.github.io/charts/tranql-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
     appVersion: develop-0.0.59
-    created: "2021-07-29T12:22:03.1702277-04:00"
+    created: "2021-07-29T12:24:07.4631269-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -184,7 +226,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: develop-0.0.58
-    created: "2021-07-29T12:22:03.1653214-04:00"
+    created: "2021-07-29T12:24:07.4582469-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -197,4 +239,4 @@ entries:
     urls:
     - https://helx-charts.github.io/charts/tranql-0.1.1.tgz
     version: 0.1.1
-generated: "2021-07-29T12:22:03.0802298-04:00"
+generated: "2021-07-29T12:24:07.3454284-04:00"

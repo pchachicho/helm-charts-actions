@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   search:
   - apiVersion: v2
-    created: "2021-08-05T09:24:33.619393-04:00"
+    created: "2021-08-05T15:00:24.012272-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -22,14 +22,14 @@ entries:
       version: 0.1.4
     description: A Helm chart for Helx Search components. This chart installs Dug,
       TranQL , Airflow and Redis.
-    digest: db5e74ce9569d1e5e65f436106d7b9ccf3cc329ceeb5171429830e1418c4c497
+    digest: 7ec17696ebc393b202d0ff238f85932be34dadd1b45de69bb294e8e67ef1b737
     name: search
     type: application
     urls:
-    - https://helx-charts.github.io/charts/search-1.1.0.tgz
+    - search-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2021-08-05T09:24:33.597161-04:00"
+    created: "2021-08-05T15:00:23.99607-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -53,10 +53,10 @@ entries:
     name: search
     type: application
     urls:
-    - https://helx-charts.github.io/charts/search-1.1.0-rc0.tgz
+    - search-1.1.0-rc0.tgz
     version: 1.1.0-rc0
   - apiVersion: v2
-    created: "2021-08-05T09:24:33.575358-04:00"
+    created: "2021-08-05T15:00:23.970819-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -80,10 +80,10 @@ entries:
     name: search
     type: application
     urls:
-    - https://helx-charts.github.io/charts/search-1.0.0.tgz
+    - search-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2021-08-05T09:24:33.552616-04:00"
+    created: "2021-08-05T15:00:23.945871-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -107,10 +107,10 @@ entries:
     name: search
     type: application
     urls:
-    - https://helx-charts.github.io/charts/search-0.1.1.tgz
+    - search-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-08-05T09:24:33.529406-04:00"
+    created: "2021-08-05T15:00:23.917618-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -134,10 +134,10 @@ entries:
     name: search
     type: application
     urls:
-    - https://helx-charts.github.io/charts/search-0.1.0.tgz
+    - search-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2021-08-05T09:24:33.504433-04:00"
+    created: "2021-08-05T15:00:23.884481-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -161,12 +161,12 @@ entries:
     name: search
     type: application
     urls:
-    - https://helx-charts.github.io/charts/search-0.1.0-dev.tgz
+    - search-0.1.0-dev.tgz
     version: 0.1.0-dev
   search-api:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-08-05T09:24:33.636039-04:00"
+    created: "2021-08-05T15:00:24.030924-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -181,11 +181,11 @@ entries:
     name: search-api
     type: application
     urls:
-    - https://helx-charts.github.io/charts/search-api-0.2.0.tgz
+    - search-api-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-08-05T09:24:33.629967-04:00"
+    created: "2021-08-05T15:00:24.025429-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -200,11 +200,11 @@ entries:
     name: search-api
     type: application
     urls:
-    - https://helx-charts.github.io/charts/search-api-0.1.1.tgz
+    - search-api-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-08-05T09:24:33.625182-04:00"
+    created: "2021-08-05T15:00:24.018558-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -219,23 +219,23 @@ entries:
     name: search-api
     type: application
     urls:
-    - https://helx-charts.github.io/charts/search-api-0.1.0.tgz
+    - search-api-0.1.0.tgz
     version: 0.1.0
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-08-05T09:24:33.636401-04:00"
+    created: "2021-08-05T15:00:24.031628-04:00"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
     type: application
     urls:
-    - https://helx-charts.github.io/charts/search-ui-0.1.0.tgz
+    - search-ui-0.1.0.tgz
     version: 0.1.0
   tranql:
   - apiVersion: v2
     appVersion: develop-0.0.63
-    created: "2021-08-05T09:24:33.652246-04:00"
+    created: "2021-08-05T15:00:24.054233-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -246,11 +246,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helx-charts.github.io/charts/tranql-0.1.4.tgz
+    - tranql-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
     appVersion: develop-0.0.62
-    created: "2021-08-05T09:24:33.648317-04:00"
+    created: "2021-08-05T15:00:24.048599-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -261,11 +261,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helx-charts.github.io/charts/tranql-0.1.3.tgz
+    - tranql-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: develop-0.0.59
-    created: "2021-08-05T09:24:33.644752-04:00"
+    created: "2021-08-05T15:00:24.043311-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -276,11 +276,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helx-charts.github.io/charts/tranql-0.1.2.tgz
+    - tranql-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: develop-0.0.58
-    created: "2021-08-05T09:24:33.640127-04:00"
+    created: "2021-08-05T15:00:24.03677-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -291,6 +291,6 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helx-charts.github.io/charts/tranql-0.1.1.tgz
+    - tranql-0.1.1.tgz
     version: 0.1.1
-generated: "2021-08-05T09:24:33.479467-04:00"
+generated: "2021-08-05T15:00:23.85781-04:00"

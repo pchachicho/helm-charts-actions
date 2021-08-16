@@ -1,8 +1,19 @@
 apiVersion: v1
 entries:
+  appstore:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2021-08-16T08:14:28.158428-06:00"
+    description: A Helm chart for Kubernetes
+    digest: a3e260fac6abe8934d6f894e1c63bf085a6246cb10367405b81e9a2337574742
+    name: appstore
+    type: application
+    urls:
+    - https://helx-charts.github.io/charts/appstore-0.3.0-dev.tgz
+    version: 0.3.0-dev
   search:
   - apiVersion: v2
-    created: "2021-08-05T15:00:24.012272-04:00"
+    created: "2021-08-16T08:14:28.316249-06:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -26,10 +37,10 @@ entries:
     name: search
     type: application
     urls:
-    - search-1.1.0.tgz
+    - https://helx-charts.github.io/charts/search-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2021-08-05T15:00:23.99607-04:00"
+    created: "2021-08-16T08:14:28.297027-06:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -53,10 +64,10 @@ entries:
     name: search
     type: application
     urls:
-    - search-1.1.0-rc0.tgz
+    - https://helx-charts.github.io/charts/search-1.1.0-rc0.tgz
     version: 1.1.0-rc0
   - apiVersion: v2
-    created: "2021-08-05T15:00:23.970819-04:00"
+    created: "2021-08-16T08:14:28.270877-06:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -80,10 +91,10 @@ entries:
     name: search
     type: application
     urls:
-    - search-1.0.0.tgz
+    - https://helx-charts.github.io/charts/search-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2021-08-05T15:00:23.945871-04:00"
+    created: "2021-08-16T08:14:28.240353-06:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -107,10 +118,10 @@ entries:
     name: search
     type: application
     urls:
-    - search-0.1.1.tgz
+    - https://helx-charts.github.io/charts/search-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-08-05T15:00:23.917618-04:00"
+    created: "2021-08-16T08:14:28.214624-06:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -134,10 +145,10 @@ entries:
     name: search
     type: application
     urls:
-    - search-0.1.0.tgz
+    - https://helx-charts.github.io/charts/search-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2021-08-05T15:00:23.884481-04:00"
+    created: "2021-08-16T08:14:28.184197-06:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -161,12 +172,12 @@ entries:
     name: search
     type: application
     urls:
-    - search-0.1.0-dev.tgz
+    - https://helx-charts.github.io/charts/search-0.1.0-dev.tgz
     version: 0.1.0-dev
   search-api:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-08-05T15:00:24.030924-04:00"
+    created: "2021-08-16T08:14:28.338053-06:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -181,11 +192,11 @@ entries:
     name: search-api
     type: application
     urls:
-    - search-api-0.2.0.tgz
+    - https://helx-charts.github.io/charts/search-api-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-08-05T15:00:24.025429-04:00"
+    created: "2021-08-16T08:14:28.331746-06:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -200,11 +211,11 @@ entries:
     name: search-api
     type: application
     urls:
-    - search-api-0.1.1.tgz
+    - https://helx-charts.github.io/charts/search-api-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-08-05T15:00:24.018558-04:00"
+    created: "2021-08-16T08:14:28.324391-06:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -219,23 +230,23 @@ entries:
     name: search-api
     type: application
     urls:
-    - search-api-0.1.0.tgz
+    - https://helx-charts.github.io/charts/search-api-0.1.0.tgz
     version: 0.1.0
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-08-05T15:00:24.031628-04:00"
+    created: "2021-08-16T08:14:28.338802-06:00"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
     type: application
     urls:
-    - search-ui-0.1.0.tgz
+    - https://helx-charts.github.io/charts/search-ui-0.1.0.tgz
     version: 0.1.0
   tranql:
   - apiVersion: v2
     appVersion: develop-0.0.63
-    created: "2021-08-05T15:00:24.054233-04:00"
+    created: "2021-08-16T08:14:28.363604-06:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -246,11 +257,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - tranql-0.1.4.tgz
+    - https://helx-charts.github.io/charts/tranql-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
     appVersion: develop-0.0.62
-    created: "2021-08-05T15:00:24.048599-04:00"
+    created: "2021-08-16T08:14:28.356641-06:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -261,11 +272,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - tranql-0.1.3.tgz
+    - https://helx-charts.github.io/charts/tranql-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: develop-0.0.59
-    created: "2021-08-05T15:00:24.043311-04:00"
+    created: "2021-08-16T08:14:28.349923-06:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -276,11 +287,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - tranql-0.1.2.tgz
+    - https://helx-charts.github.io/charts/tranql-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: develop-0.0.58
-    created: "2021-08-05T15:00:24.03677-04:00"
+    created: "2021-08-16T08:14:28.344074-06:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -291,6 +302,6 @@ entries:
     name: tranql
     type: application
     urls:
-    - tranql-0.1.1.tgz
+    - https://helx-charts.github.io/charts/tranql-0.1.1.tgz
     version: 0.1.1
-generated: "2021-08-05T15:00:23.85781-04:00"
+generated: "2021-08-16T08:14:28.157275-06:00"

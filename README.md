@@ -19,11 +19,24 @@ Add the repo to helm:
 helm repo add helx-charts https://helx-charts.github.io/charts/
 ```
 
-## Development
+## Dev Guide:
 
-### Chart Development & Release
+There are three components to making changes to a chart: development, cutting a release, and publishing that release.
 
-### Publishing
+###  Development
+
+### Cutting a Release
+
+Chart development follows a [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) branching model. When you are ready to make a new release of a chart:
+
+1. Create a new release branch off of develop for the target version: `git checkout release/appstore-chart-0.3`
+2. Update the chart version to an rc version in Chart.yaml: `version: 0.3.rc0`
+3. Submit a PR for the team to review. 
+4. After approval, merge into main and bump the version to a release: `version: 0.3.0`
+5. Create a tag for the release: `git tag 0.3.0 && git push --tags`
+6. Merge the main branch back into develop and bump the version to a dev version: `version: 0.4.dev`
+
+### Publishing a release
 
 When you are ready to publish a new release for any of the charts, these are the steps to follow for a smooth release:
 

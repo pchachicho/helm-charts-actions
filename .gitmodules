@@ -6,7 +6,7 @@
 	url = git@github.com:helx-charts/search-ui-chart.git
 [submodule "charts/search"]
 	path = charts/search
-	url = git@github.com:helx-charts/search-chart.git
+	url = git@github.com:helxplatform/search-chart.git
 [submodule "charts/tranql"]
 	path = charts/tranql
 	url = git@github.com:helx-charts/tranql-chart.git

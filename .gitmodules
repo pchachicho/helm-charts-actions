@@ -12,7 +12,7 @@
 	url = git@github.com:helxplatform/tranql-chart.git
 [submodule "charts/ui"]
 	path = charts/ui
-	url = git@github.com:helx-charts/ui-chart.git
+	url = git@github.com:helxplatform/ui-chart.git
 [submodule "charts/appstore"]
 	path = charts/appstore
 	url = git@github.com:helxplatform/appstore-chart.git

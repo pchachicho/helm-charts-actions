@@ -16,3 +16,6 @@
 [submodule "charts/appstore"]
 	path = charts/appstore
 	url = git@github.com:helxplatform/appstore-chart.git
+[submodule "charts/tycho-api"]
+	path = charts/tycho-api
+	url = git@github.com:helxplatform/tycho-api-chart.git

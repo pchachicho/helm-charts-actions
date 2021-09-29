@@ -6,9 +6,8 @@ Helm charts for HeLx components
 
 * [appstore-chart](https://github.com/helxplatform/appstore-chart)
 * [search-chart](https://github.com/helxplatform/search-chart)
-* [search-api-chart](https://github.com/helx-charts/search-api-chart) (deprecated)
-* [search-ui-chart](https://github.com/helx-charts/search-ui-chart) (deprecated)
 * [tranql-chart](https://github.com/helxplatform/tranql-chart)
+* [tycho-api-chart](https://github.com/helxplatform/tycho-api-chart)
 * [ui-chart](https://github.com/helxplatform/ui-chart)
 
 ## Using the repo

@@ -4,19 +4,19 @@ Helm charts for HeLx components
 
 ## Contents
 
-* [appstore-chart](https://github.com/helx-charts/appstore-chart)
-* [search-chart](https://github.com/helx-charts/search-chart)
+* [appstore-chart](https://github.com/helxplatform/appstore-chart)
+* [search-chart](https://github.com/helxplatform/search-chart)
 * [search-api-chart](https://github.com/helx-charts/search-api-chart) (deprecated)
 * [search-ui-chart](https://github.com/helx-charts/search-ui-chart) (deprecated)
-* [tranql-chart](https://github.com/helx-charts/tranql-chart)
-* [ui-chart](https://github.com/helx-charts/ui-chart)
+* [tranql-chart](https://github.com/helxplatform/tranql-chart)
+* [ui-chart](https://github.com/helxplatform/ui-chart)
 
 ## Using the repo
 
 Add the repo to helm:
 
 ```
-helm repo add helx-charts https://helx-charts.github.io/charts/
+helm repo add helx-charts https://helxplatform.github.io/helm-charts/
 ```
 
 ## Dev Guide:
@@ -42,7 +42,7 @@ There are three components to making changes to a chart: development, cutting a 
 3. Package the chart into a tar file: `helm package .`
 4. Move the resulting tar file into the `docs` directory: `mv appstore-0.1.0.tgz ../../docs/`
 5. Move back to the top level: `cd ../../`
-6. Rebuild the index: `helm repo index --url=https://helx-charts.github.io/charts/ docs`
+6. Rebuild the index: `helm repo index --url=https://helxplatform.github.io/helm-charts/ docs`
 7. Commit and push to make the new package available: 
  ```
 git add docs

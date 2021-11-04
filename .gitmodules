@@ -19,3 +19,6 @@
 [submodule "charts/tycho-api"]
 	path = charts/tycho-api
 	url = git@github.com:helxplatform/tycho-api-chart.git
+[submodule "charts/monitoring"]
+	path = charts/monitoring
+	url = git@github.com:helxplatform/monitoring-chart.git

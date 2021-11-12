@@ -3,7 +3,7 @@ entries:
   appstore:
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2021-11-10T15:06:42.942502-05:00"
+    created: "2021-11-12T00:50:12.001857-05:00"
     description: A Helm chart for Kubernetes
     digest: bf150176fb3c46cfd1912178dbd484a6a3d1cabbcf3d38c929b6b632a511194e
     name: appstore
@@ -13,7 +13,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 1.2.dev-bcf0e7ca
-    created: "2021-11-10T15:06:42.940659-05:00"
+    created: "2021-11-12T00:50:12.000541-05:00"
     description: A Helm chart for Kubernetes
     digest: 4974160de1798c1c50e4a4e04190e8f9ebb410f8ba2afc56e1672b5a9ef8b4d4
     name: appstore
@@ -24,7 +24,7 @@ entries:
   monitoring:
   - apiVersion: v2
     appVersion: 0.2.2
-    created: "2021-11-10T15:06:43.058614-05:00"
+    created: "2021-11-12T00:50:12.104035-05:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -55,7 +55,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2021-11-10T15:06:43.025759-05:00"
+    created: "2021-11-12T00:50:12.073004-05:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -86,7 +86,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-11-10T15:06:42.988466-05:00"
+    created: "2021-11-12T00:50:12.037376-05:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -118,7 +118,7 @@ entries:
   search:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2021-11-10T15:06:43.267522-05:00"
+    created: "2021-11-12T00:50:12.299537-05:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -146,7 +146,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2021-11-10T15:06:43.249524-05:00"
+    created: "2021-11-12T00:50:12.282633-05:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -174,7 +174,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2021-11-10T15:06:43.229301-05:00"
+    created: "2021-11-12T00:50:12.26603-05:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -201,7 +201,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2021-11-10T15:06:43.21104-05:00"
+    created: "2021-11-12T00:50:12.247432-05:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -228,7 +228,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2021-11-10T15:06:43.192721-05:00"
+    created: "2021-11-12T00:50:12.2308-05:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -255,7 +255,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.1.0-rc0.tgz
     version: 1.1.0-rc0
   - apiVersion: v2
-    created: "2021-11-10T15:06:43.165656-05:00"
+    created: "2021-11-12T00:50:12.204621-05:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -282,7 +282,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2021-11-10T15:06:43.138684-05:00"
+    created: "2021-11-12T00:50:12.179346-05:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -309,7 +309,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-11-10T15:06:43.112123-05:00"
+    created: "2021-11-12T00:50:12.153438-05:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -336,7 +336,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2021-11-10T15:06:43.086178-05:00"
+    created: "2021-11-12T00:50:12.129479-05:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -365,7 +365,7 @@ entries:
   search-api:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-11-10T15:06:43.286188-05:00"
+    created: "2021-11-12T00:50:12.31784-05:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -384,7 +384,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-11-10T15:06:43.280265-05:00"
+    created: "2021-11-12T00:50:12.311745-05:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -403,7 +403,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-11-10T15:06:43.273712-05:00"
+    created: "2021-11-12T00:50:12.305886-05:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -423,7 +423,7 @@ entries:
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2021-11-10T15:06:43.286917-05:00"
+    created: "2021-11-12T00:50:12.318453-05:00"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
@@ -434,7 +434,7 @@ entries:
   tranql:
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2021-11-10T15:06:43.311634-05:00"
+    created: "2021-11-12T00:50:12.340865-05:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -449,7 +449,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: develop-0.0.63
-    created: "2021-11-10T15:06:43.306078-05:00"
+    created: "2021-11-12T00:50:12.336358-05:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -464,7 +464,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: develop-0.0.62
-    created: "2021-11-10T15:06:43.30128-05:00"
+    created: "2021-11-12T00:50:12.331512-05:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -479,7 +479,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: develop-0.0.59
-    created: "2021-11-10T15:06:43.296453-05:00"
+    created: "2021-11-12T00:50:12.327392-05:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -494,7 +494,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: develop-0.0.58
-    created: "2021-11-10T15:06:43.291803-05:00"
+    created: "2021-11-12T00:50:12.322701-05:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -510,7 +510,7 @@ entries:
   tycho-api:
   - apiVersion: v2
     appVersion: 1.0.29
-    created: "2021-11-10T15:06:43.312265-05:00"
+    created: "2021-11-12T00:50:12.341428-05:00"
     description: A Helm chart for Kubernetes
     digest: ad204054c0409cb7286ea3c889cdc48e7875541a5c48d8932dc4cdd239e72b69
     name: tycho-api
@@ -521,7 +521,7 @@ entries:
   ui:
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2021-11-10T15:06:43.314002-05:00"
+    created: "2021-11-12T00:50:12.343016-05:00"
     description: A Helm chart for Kubernetes
     digest: b0b612b16853f1d48cba0e7ee80df459042baf5fecbde7236e28781d4c639e61
     name: ui
@@ -531,7 +531,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2021-11-10T15:06:43.313062-05:00"
+    created: "2021-11-12T00:50:12.342168-05:00"
     description: A Helm chart for Kubernetes
     digest: efe258ce7d0af952b5867ffab1020aa43ebe88069c8b17e5a7738031dc31bac7
     name: ui
@@ -539,4 +539,4 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-10T15:06:42.938513-05:00"
+generated: "2021-11-12T00:50:11.998712-05:00"

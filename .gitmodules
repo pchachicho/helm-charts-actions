@@ -1,4 +1,24 @@
 [submodule "charts/search-api"]
 	path = charts/search-api
-	url = git@github.com:cschreep/search-api-chart.git
-
+	url = git@github.com:helx-charts/search-api-chart.git
+[submodule "charts/search-ui"]
+	path = charts/search-ui
+	url = git@github.com:helx-charts/search-ui-chart.git
+[submodule "charts/search"]
+	path = charts/search
+	url = git@github.com:helxplatform/search-chart.git
+[submodule "charts/tranql"]
+	path = charts/tranql
+	url = git@github.com:helxplatform/tranql-chart.git
+[submodule "charts/ui"]
+	path = charts/ui
+	url = git@github.com:helxplatform/ui-chart.git
+[submodule "charts/appstore"]
+	path = charts/appstore
+	url = git@github.com:helxplatform/appstore-chart.git
+[submodule "charts/tycho-api"]
+	path = charts/tycho-api
+	url = git@github.com:helxplatform/tycho-api-chart.git
+[submodule "charts/monitoring"]
+	path = charts/monitoring
+	url = git@github.com:helxplatform/monitoring-chart.git

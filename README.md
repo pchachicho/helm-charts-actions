@@ -49,3 +49,23 @@ git add charts/appstore
 git commit -m "Publishing appstore chart version 0.1.0"
 git push
 ```
+
+### Localized development
+
+Development can be done locally by following the above instructions, but instead of publishing to a public url
+simply run a local http server and change helm repo list to point to that http server.  A simple Dockerfile
+and docker-compose.yml file are provided for this.  This has the advantage of not impacting someone else with
+an untested change.
+
+#### Steps
+
+Change the repo definition from `https://helxplatform.github.io/helm-charts/` to `http://localhost:8080/`
+
+    helm repo add helx-charts http://localhost:8080/ --force-update
+
+Start the local http server with the following at the top level directory
+
+    docker-compose up
+
+Make changes as described above and then simply perform a helm dependency update as necessary and test and
+then once done change the repo definition back.

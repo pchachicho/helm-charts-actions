@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:current-alpine
 RUN npm install -g http-server
 RUN mkdir /public
 WORKDIR /public

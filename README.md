@@ -69,3 +69,9 @@ Start the local http server with the following at the top level directory
 
 Make changes as described above and then simply perform a helm dependency update as necessary and test and
 then once done change the repo definition back.
+
+### Altered Indexing
+
+Indexing has refer to how the packages are accessed from the http server, so the above indexing is altered to
+
+    helm repo index --url=http://localhost:8080/ docs

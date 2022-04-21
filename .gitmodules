@@ -22,3 +22,6 @@
 [submodule "charts/monitoring"]
 	path = charts/monitoring
 	url = git@github.com:helxplatform/monitoring-chart.git
+[submodule "charts/kubernetes-image-puller"]
+	path = charts/kubernetes-image-puller
+	url = git@github.com:helxplatform/kubernetes-image-puller.git

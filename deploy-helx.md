@@ -28,12 +28,12 @@ During our install we supply two helm values files (one for backend services, on
 ```shell
 # Backend services installation
 # for simplicity we will use the name `helx` for our installation
-helm -n <your-namespace> --skip-crds -f   <path-to-your-backend-values-file> helx  helx-charts/helx 
+helm -n <your-namespace> --skip-crds -f <path-to-your-backend-values-file> helx helx-charts/helx 
 # Frontend installation, here we will use `helx-ui`
-helm -n <your-namespace> -f <path-to-your-frontend-values-file>  helx-ui helx-charts/ui
+helm -n <your-namespace> -f <path-to-your-frontend-values-file> helx-ui helx-charts/ui
 ```
 
-> **Note: The `--skip-crds`, in the first command above, is required if your user doesn't have permissions to create custom resource definitions(CRDs). **
+> **Note**: The `--skip-crds`, in the first command above, is required if your user doesn't have permissions to create custom resource definitions(CRDs).
 
 <h3>Search instance installation</h3>
 
@@ -72,6 +72,8 @@ nginx:
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt
       nginx.ingress.kubernetes.io/enable-cors: "true"    
+      # For making your instance public uncomment the following line, this usually requires cluster DNS manager approval
+      # nginx.ingress.kubernetes.io/whitelist-source-range: "0.0.0.0/0,::/0"
   service:
     serverName: example.apps.renci.org
 ###--- Nginx configuration end

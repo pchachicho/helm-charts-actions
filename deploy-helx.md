@@ -165,8 +165,7 @@ search:
       # use the helx redis instance 
       host: helx-redis-replicas
 ```
-> #### :bulb: 
->The above configuration heavily relies on defaults from the following charts 
+> :bulb: The above configuration heavily relies on defaults from the following charts 
 > [Search-chart](https://github.com/helxplatform/search-chart), 
 > [Tranql-chart](https://github.com/helxplatform/tranql-chart), 
 > [Airflow-chart(v8.1.3)](https://github.com/airflow-helm/charts/tree/airflow-8.1.3) , 

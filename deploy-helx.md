@@ -45,6 +45,8 @@ and [Dug api server](https://github.com/helxplatform/dug).
 Our backend-values file requires us to define some parameters, here is a sample values file.
 We will use example.apps.renci.org as our server. 
 ##### Backend Values file 
+<details>
+  <summary> helx-values.yaml (click to expand) </summary>
 
 ```yaml
 # Here we disable some helx feature not relevant for search. 
@@ -172,9 +174,13 @@ search:
 > [Elastic-chart(v7.16)](https://github.com/elastic/helm-charts/tree/7.16) and 
 > [redis-chart(v15.4.1)](https://github.com/bitnami/charts/tree/master/bitnami/redis). 
 > For more detailed configuration options, please review the repo's. 
-
+</details> 
 
 ##### Frontend values file
+
+<details>
+<summary> ui-values.yaml (click to expand)</summary>
+
 ```yaml
 config:
   brand_name: heal
@@ -202,4 +208,5 @@ service:
         headers:
         - Content-Type
 ```
-> **Note**: For full configuration options please refer to the [ui chart](https://github.com/helxplatform/ui-chart/tree/master).
+> :bulb: For full configuration options please refer to the [ui chart](https://github.com/helxplatform/ui-chart/tree/master).
+</details>

@@ -42,8 +42,7 @@ When installing search instance the following components are installed.
 [Roger](https://github.com/helxplatform/roger), Airflow, redis, elasticsearch, [Tranql](https://github.com/helxplatform/tranql) 
 and [Dug api server](https://github.com/helxplatform/dug).
 
-Our backend-values file requires us to define some parameters, here is a sample values file.
-We will use example.apps.renci.org as our server. 
+The following values files are provided to make bare minimum installation.  
 ##### Backend Values file 
 <details>
   <summary> helx-values.yaml (click to expand) </summary>
@@ -210,3 +209,12 @@ service:
 ```
 > :bulb: For full configuration options please refer to the [ui chart](https://github.com/helxplatform/ui-chart/tree/master).
 </details>
+
+#### :Rocket: Install
+
+```bash
+# install backend services
+helm -n <your-namespace> install --skip-crds -f helx-values.yaml helx helx-charts/helx
+# install frontend
+helm -n <your-namespace> install -f ui-values.yaml helx-ui helx-charts/ui
+```

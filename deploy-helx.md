@@ -36,6 +36,7 @@ helm -n <your-namespace> -f <path-to-your-frontend-values-file>  helx-ui helx-ch
 > **Note: The `--skip-crds`, in the first command above, is required if your user doesn't have permissions to create custom resource definitions(CRDs). **
 
 <h3>Search instance installation</h3>
+
 ***
 
 When installing search instance the following components are installed. 

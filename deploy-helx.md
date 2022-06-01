@@ -35,11 +35,9 @@ helm -n <your-namespace> -f <path-to-your-frontend-values-file> <instance-name> 
 
 > **Note: The `--skip-crds`, in the first command above, is required if your user doesn't have permissions to create custom resource definitions(CRDs). **
 
-#### Search instance installation
-
+<h3>Search instance installation</h3>
 ***
-<details>
-<summary>Instructions</summary>
+
 When installing search instance the following components are installed. 
 
 [Roger](https://github.com/helxplatform/roger), Airflow, redis, elasticsearch, [Tranql](https://github.com/helxplatform/tranql) 
@@ -222,9 +220,8 @@ helm -n <your-namespace> install --skip-crds -f helx-values.yaml helx helx-chart
 # install frontend
 helm -n <your-namespace> install -f ui-values.yaml helx-ui helx-charts/ui
 ```
-</details>
 
-#### Appstore instance installation
+<h3>Appstore instance installation</h3>
 
 ***
 <details>

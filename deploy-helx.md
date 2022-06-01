@@ -37,12 +37,16 @@ helm -n <your-namespace> -f <path-to-your-frontend-values-file> <instance-name> 
 
 #### Search instance installation
 
+***
+<details>
+<summary>Instructions</summary>
 When installing search instance the following components are installed. 
 
 [Roger](https://github.com/helxplatform/roger), Airflow, redis, elasticsearch, [Tranql](https://github.com/helxplatform/tranql) 
 and [Dug api server](https://github.com/helxplatform/dug).
 
-The following values files are provided to make bare minimum installation.  
+The following values files are provided to make bare minimum installation. 
+
 ##### Backend Values file 
 <details>
   <summary> helx-values.yaml (click to expand) </summary>
@@ -210,7 +214,7 @@ service:
 > :bulb: For full configuration options please refer to the [ui chart](https://github.com/helxplatform/ui-chart/tree/master).
 </details>
 
-#### :rocket: Install
+#### :rocket: Install Search 
 
 ```bash
 # install backend services
@@ -218,3 +222,11 @@ helm -n <your-namespace> install --skip-crds -f helx-values.yaml helx helx-chart
 # install frontend
 helm -n <your-namespace> install -f ui-values.yaml helx-ui helx-charts/ui
 ```
+</details>
+
+#### Appstore instance installation
+
+***
+<details>
+<summary> :construction: Under construction  </summary>
+</details>

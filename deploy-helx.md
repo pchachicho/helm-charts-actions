@@ -210,7 +210,7 @@ service:
 > :bulb: For full configuration options please refer to the [ui chart](https://github.com/helxplatform/ui-chart/tree/master).
 </details>
 
-#### :Rocket: Install
+#### :rocket: Install
 
 ```bash
 # install backend services

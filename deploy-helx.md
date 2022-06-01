@@ -30,7 +30,7 @@ During our install we supply two helm values files (one for backend services, on
 # for simplicity we will use the name `helx` for our installation
 helm -n <your-namespace> --skip-crds -f   <path-to-your-backend-values-file> helx  helx-charts/helx 
 # Frontend installation, here we will use `helx-ui`
-helm -n <your-namespace> -f <path-to-your-frontend-values-file> <instance-name> helx-ui helx-charts/ui
+helm -n <your-namespace> -f <path-to-your-frontend-values-file>  helx-ui helx-charts/ui
 ```
 
 > **Note: The `--skip-crds`, in the first command above, is required if your user doesn't have permissions to create custom resource definitions(CRDs). **

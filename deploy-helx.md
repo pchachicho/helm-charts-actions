@@ -76,6 +76,8 @@ nginx:
       # nginx.ingress.kubernetes.io/whitelist-source-range: "0.0.0.0/0,::/0"
   service:
     serverName: example.apps.renci.org
+  SSL:
+    nginxTLSSecret: example.apps.renci.org-tls
 ###--- Nginx configuration end
 
 ### Search chart configuration begin 

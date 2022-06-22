@@ -75,3 +75,7 @@ then once done change the repo definition back.
 Indexing has refer to how the packages are accessed from the http server, so the above indexing is altered to
 
     helm repo index --url=http://localhost:8080/ docs
+
+### Installation instructions for helx instances
+
+For detailed installation instructions, please refer to [deploy-helx.md](deploy-helx.md).

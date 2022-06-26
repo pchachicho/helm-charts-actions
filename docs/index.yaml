@@ -3,7 +3,7 @@ entries:
   appstore:
   - apiVersion: v2
     appVersion: 1.4.0
-    created: "2022-06-23T11:46:56.275037-04:00"
+    created: "2022-06-26T18:15:10.932507-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -18,7 +18,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 1.4.0
-    created: "2022-06-23T11:46:56.269421-04:00"
+    created: "2022-06-26T18:15:10.925862-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -33,7 +33,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.3.1-alpha
-    created: "2022-06-23T11:46:56.263212-04:00"
+    created: "2022-06-26T18:15:10.920753-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -48,7 +48,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.3.1
-    created: "2022-06-23T11:46:56.256758-04:00"
+    created: "2022-06-26T18:15:10.914762-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -63,7 +63,7 @@ entries:
     version: 0.6.3
   - apiVersion: v2
     appVersion: 1.3.1-dev
-    created: "2022-06-23T11:46:56.250308-04:00"
+    created: "2022-06-26T18:15:10.909896-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -78,7 +78,7 @@ entries:
     version: 0.6.2-dev
   - apiVersion: v2
     appVersion: 1.3.1-dev
-    created: "2022-06-23T11:46:56.243963-04:00"
+    created: "2022-06-26T18:15:10.903342-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -93,7 +93,7 @@ entries:
     version: 0.6.1-dev
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2022-06-23T11:46:56.234232-04:00"
+    created: "2022-06-26T18:15:10.895324-04:00"
     description: A Helm chart for Kubernetes
     digest: 659ece6774b61b94e1e097002403e853b5fae8c06b3b2f68786b561068e564ae
     name: appstore
@@ -103,7 +103,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2022-06-23T11:46:56.231939-04:00"
+    created: "2022-06-26T18:15:10.89315-04:00"
     description: A Helm chart for Kubernetes
     digest: bf150176fb3c46cfd1912178dbd484a6a3d1cabbcf3d38c929b6b632a511194e
     name: appstore
@@ -113,7 +113,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 1.2.dev-bcf0e7ca
-    created: "2022-06-23T11:46:56.22985-04:00"
+    created: "2022-06-26T18:15:10.890299-04:00"
     description: A Helm chart for Kubernetes
     digest: 4974160de1798c1c50e4a4e04190e8f9ebb410f8ba2afc56e1672b5a9ef8b4d4
     name: appstore
@@ -124,7 +124,7 @@ entries:
   dev-shell:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-23T11:46:56.276676-04:00"
+    created: "2022-06-26T18:15:10.933791-04:00"
     description: A Helm chart for Kubernetes
     digest: 222788564de3b070532c3490fcfbfe935bc76a3524aec6a6e7c7f028a6ba19fe
     name: dev-shell
@@ -135,7 +135,7 @@ entries:
   helx:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-06-23T11:46:56.791624-04:00"
+    created: "2022-06-26T18:15:11.4506-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -190,7 +190,7 @@ entries:
     version: 1.1.2
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-06-23T11:46:56.738871-04:00"
+    created: "2022-06-26T18:15:11.394817-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -245,7 +245,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-06-23T11:46:56.684891-04:00"
+    created: "2022-06-26T18:15:11.339036-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -300,7 +300,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2022-06-23T11:46:56.631477-04:00"
+    created: "2022-06-26T18:15:11.283302-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -355,7 +355,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.10.0
-    created: "2022-06-23T11:46:56.577717-04:00"
+    created: "2022-06-26T18:15:11.226156-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -410,7 +410,7 @@ entries:
     version: 0.15.0
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2022-06-23T11:46:56.518363-04:00"
+    created: "2022-06-26T18:15:11.169613-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -465,7 +465,7 @@ entries:
     version: 0.13.1
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2022-06-23T11:46:56.461401-04:00"
+    created: "2022-06-26T18:15:11.113361-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -524,7 +524,7 @@ entries:
     version: 0.12.2
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2022-06-23T11:46:56.405328-04:00"
+    created: "2022-06-26T18:15:11.054944-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -583,7 +583,7 @@ entries:
     version: 0.12.0
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2022-06-23T11:46:56.34082-04:00"
+    created: "2022-06-26T18:15:10.991664-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -640,10 +640,22 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/helx-0.11.1.tgz
     version: 0.11.1
+  hubhub:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-06-26T18:15:11.451016-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 950556a9aaf381030ecb8615e75a02dc3a9bea0daa061d0b14125a02e4d71d7d
+    name: hubhub
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/hubhub-0.2.1.tgz
+    version: 0.2.1
   kubernetes-image-puller:
   - apiVersion: v1
-    created: "2022-06-23T11:46:56.793068-04:00"
-    description: The kubernetes image puller downloads che images ahead of time for faster workspace startup
+    created: "2022-06-26T18:15:11.451815-04:00"
+    description: The kubernetes image puller downloads che images ahead of time for
+      faster workspace startup
     digest: 5eadd31ed669dfd0b31585bc827c2067e9e8c76d8303a1a1ebc5f41d40544f94
     name: kubernetes-image-puller
     urls:
@@ -652,7 +664,7 @@ entries:
   monitoring:
   - apiVersion: v2
     appVersion: 0.2.2
-    created: "2022-06-23T11:46:56.917993-04:00"
+    created: "2022-06-26T18:15:11.578515-04:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -683,7 +695,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2022-06-23T11:46:56.888691-04:00"
+    created: "2022-06-26T18:15:11.546768-04:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -714,7 +726,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2022-06-23T11:46:56.856964-04:00"
+    created: "2022-06-26T18:15:11.51462-04:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -745,7 +757,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-06-23T11:46:56.8267-04:00"
+    created: "2022-06-26T18:15:11.483499-04:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -777,7 +789,7 @@ entries:
   search:
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2022-06-23T11:46:57.311835-04:00"
+    created: "2022-06-26T18:15:11.964986-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -795,7 +807,8 @@ entries:
       name: tranql
       repository: '@helx-charts'
       version: 0.4.2
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: af4f467e949e5903e2c175ab1d2d7af2f1e3a97e8de1e9dbfa0ac489a0bee50b
     name: search
     type: application
@@ -804,7 +817,7 @@ entries:
     version: 1.8.0
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2022-06-23T11:46:57.293629-04:00"
+    created: "2022-06-26T18:15:11.946219-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -822,7 +835,8 @@ entries:
       name: tranql
       repository: '@helx-charts'
       version: 0.4.2
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 8a2229de64b125fb0b99a8c9293cc850ccaeca2e1a9cd5e20efc8a2ddc0e45d4
     name: search
     type: application
@@ -831,7 +845,7 @@ entries:
     version: 1.7.0
   - apiVersion: v2
     appVersion: 2.8.0
-    created: "2022-06-23T11:46:57.274071-04:00"
+    created: "2022-06-26T18:15:11.92785-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -849,7 +863,8 @@ entries:
       name: tranql
       repository: '@helx-charts'
       version: 0.4.2
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 0badcce194a88de3f6a20e184fc662540d312c436d1b110a34410d9cfbee1193
     name: search
     type: application
@@ -858,7 +873,7 @@ entries:
     version: 1.6.4
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2022-06-23T11:46:57.25579-04:00"
+    created: "2022-06-26T18:15:11.90909-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -876,7 +891,8 @@ entries:
       name: tranql
       repository: '@helx-charts'
       version: 0.4.2
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: c34a5a79b98205e8d1ea6ef0ac3319d3485c7f5f63f914aff306d954c53d5029
     name: search
     type: application
@@ -885,7 +901,7 @@ entries:
     version: 1.6.3
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2022-06-23T11:46:57.235972-04:00"
+    created: "2022-06-26T18:15:11.889236-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -903,7 +919,8 @@ entries:
       name: tranql
       repository: '@helx-charts'
       version: 0.4.2
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 748a61bd77707cc46af11d482170f4580a776a3f70e78ab817d9d86ed69fd302
     name: search
     type: application
@@ -912,7 +929,7 @@ entries:
     version: 1.6.2
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2022-06-23T11:46:57.215634-04:00"
+    created: "2022-06-26T18:15:11.869589-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -930,7 +947,8 @@ entries:
       name: tranql
       repository: '@helx-charts'
       version: 0.4.1-dev
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 0be6287f873b77cf12255096d371d4603290934de3888db82e4ca489baef60ad
     name: search
     type: application
@@ -939,7 +957,7 @@ entries:
     version: 1.6.0-dev
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2022-06-23T11:46:57.184666-04:00"
+    created: "2022-06-26T18:15:11.840087-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -957,7 +975,8 @@ entries:
       name: tranql
       repository: https://helxplatform.github.io/helm-charts/
       version: 0.2.0
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 38788d8d15acaa745b055e74db9af0bb6da62524ebeb696f6c3564f54788f19b
     name: search
     type: application
@@ -966,7 +985,7 @@ entries:
     version: 1.5.0-dev
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2022-06-23T11:46:57.165578-04:00"
+    created: "2022-06-26T18:15:11.821451-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -984,7 +1003,8 @@ entries:
       name: tranql
       repository: '@helx-charts'
       version: 0.2.1
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 8a313746946bbe7c29990b05162101c937cc7d62514e4d60ede642825c4ea9fc
     name: search
     type: application
@@ -993,7 +1013,7 @@ entries:
     version: 1.4.2
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2022-06-23T11:46:57.13975-04:00"
+    created: "2022-06-26T18:15:11.801083-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1011,7 +1031,8 @@ entries:
       name: tranql
       repository: https://helxplatform.github.io/helm-charts/
       version: 0.2.0
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: f2433476e73b4cad8a9e7f9df0e43f6cae83f3c234b16ad0aff05365b0d9294a
     name: search
     type: application
@@ -1020,7 +1041,7 @@ entries:
     version: 1.4.1
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2022-06-23T11:46:57.120352-04:00"
+    created: "2022-06-26T18:15:11.78297-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1038,7 +1059,8 @@ entries:
       name: tranql
       repository: https://helxplatform.github.io/helm-charts/
       version: 0.2.0
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: bf8d166dd280890aa8580b2536d0940cd773d6abc4802e7bb853a29c98c84f83
     name: search
     type: application
@@ -1047,7 +1069,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2022-06-23T11:46:57.102789-04:00"
+    created: "2022-06-26T18:15:11.765022-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1065,7 +1087,8 @@ entries:
       name: tranql
       repository: https://helx-charts.github.io/charts/
       version: 0.2.0
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 4a9395e004e53f56e0bddbb8a6b8359a9b2d1fbaaafe43f8d7df6feee19967f2
     name: search
     type: application
@@ -1074,7 +1097,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2022-06-23T11:46:57.085497-04:00"
+    created: "2022-06-26T18:15:11.74745-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1092,7 +1115,8 @@ entries:
       name: tranql
       repository: https://helx-charts.github.io/charts/
       version: 0.1.4
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 74fd347ee20803b9402a69f56e9b1d1982ee2cd6b4e058f278a16e4870286a81
     name: search
     type: application
@@ -1100,7 +1124,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2022-06-23T11:46:57.064436-04:00"
+    created: "2022-06-26T18:15:11.729948-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1118,7 +1142,8 @@ entries:
       name: tranql
       repository: https://helx-charts.github.io/charts/
       version: 0.1.4
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 7ec17696ebc393b202d0ff238f85932be34dadd1b45de69bb294e8e67ef1b737
     name: search
     type: application
@@ -1126,7 +1151,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2022-06-23T11:46:57.047598-04:00"
+    created: "2022-06-26T18:15:11.711896-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1144,7 +1169,8 @@ entries:
       name: tranql
       repository: https://helx-charts.github.io/charts/
       version: 0.1.4
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 21f2fcfed622aa9b6f09fe859b30e63717792ae28ca40975b35dcbbeb5144cdc
     name: search
     type: application
@@ -1152,7 +1178,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.1.0-rc0.tgz
     version: 1.1.0-rc0
   - apiVersion: v2
-    created: "2022-06-23T11:46:57.020483-04:00"
+    created: "2022-06-26T18:15:11.684784-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1170,7 +1196,8 @@ entries:
       name: tranql
       repository: https://helx-charts.github.io/charts/
       version: 0.1.3
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: a4ed1711da0445b948d9f753f048b54178dba0ae4fd4095c277e5ce2d7a69137
     name: search
     type: application
@@ -1178,7 +1205,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2022-06-23T11:46:56.994293-04:00"
+    created: "2022-06-26T18:15:11.657759-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1196,7 +1223,8 @@ entries:
       name: tranql
       repository: https://yaphetkg.github.io
       version: 0.1.2
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: c8a8e316110762dabc632f0f69d173d933b4d65831fbe909e4469a687dfe45aa
     name: search
     type: application
@@ -1204,7 +1232,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2022-06-23T11:46:56.967758-04:00"
+    created: "2022-06-26T18:15:11.630387-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1222,7 +1250,8 @@ entries:
       name: tranql
       repository: https://yaphetkg.github.io
       version: 0.1.2
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: c46b7836d88f5d6adea29804c839dd63056a8507caa49eb5c0cb68c3269ed360
     name: search
     type: application
@@ -1230,7 +1259,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2022-06-23T11:46:56.944447-04:00"
+    created: "2022-06-26T18:15:11.604522-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1248,7 +1277,8 @@ entries:
       name: tranql
       repository: https://yaphetkg.github.io
       version: 0.1.2
-    description: A Helm chart for Helx Search components. This chart installs Dug, TranQL , Airflow and Redis.
+    description: A Helm chart for Helx Search components. This chart installs Dug,
+      TranQL , Airflow and Redis.
     digest: 28d0a08813e89c2516f482f9a977329b79819ebd6b37983f369a3634f2015d21
     name: search
     type: application
@@ -1258,7 +1288,7 @@ entries:
   search-api:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2022-06-23T11:46:57.331333-04:00"
+    created: "2022-06-26T18:15:11.983975-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -1277,7 +1307,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2022-06-23T11:46:57.325479-04:00"
+    created: "2022-06-26T18:15:11.977573-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -1296,7 +1326,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2022-06-23T11:46:57.318919-04:00"
+    created: "2022-06-26T18:15:11.971079-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -1316,7 +1346,7 @@ entries:
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2022-06-23T11:46:57.331907-04:00"
+    created: "2022-06-26T18:15:11.984549-04:00"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
@@ -1327,7 +1357,7 @@ entries:
   tranql:
   - apiVersion: v2
     appVersion: 0.4.dev2
-    created: "2022-06-23T11:46:57.377346-04:00"
+    created: "2022-06-26T18:15:12.028528-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -1342,7 +1372,7 @@ entries:
     version: 0.4.2
   - apiVersion: v2
     appVersion: 0.4.dev2
-    created: "2022-06-23T11:46:57.371372-04:00"
+    created: "2022-06-26T18:15:12.022968-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -1357,7 +1387,7 @@ entries:
     version: 0.4.1-dev
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2022-06-23T11:46:57.360571-04:00"
+    created: "2022-06-26T18:15:12.012512-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -1372,7 +1402,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2022-06-23T11:46:57.355298-04:00"
+    created: "2022-06-26T18:15:12.007326-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -1387,7 +1417,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: develop-0.0.63
-    created: "2022-06-23T11:46:57.350702-04:00"
+    created: "2022-06-26T18:15:12.002121-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -1402,7 +1432,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: develop-0.0.62
-    created: "2022-06-23T11:46:57.346699-04:00"
+    created: "2022-06-26T18:15:11.997961-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -1417,7 +1447,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: develop-0.0.59
-    created: "2022-06-23T11:46:57.341638-04:00"
+    created: "2022-06-26T18:15:11.993173-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -1432,7 +1462,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: develop-0.0.58
-    created: "2022-06-23T11:46:57.336728-04:00"
+    created: "2022-06-26T18:15:11.988799-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -1448,7 +1478,7 @@ entries:
   tycho-api:
   - apiVersion: v2
     appVersion: 1.0.29
-    created: "2022-06-23T11:46:57.377932-04:00"
+    created: "2022-06-26T18:15:12.029142-04:00"
     description: A Helm chart for Kubernetes
     digest: ad204054c0409cb7286ea3c889cdc48e7875541a5c48d8932dc4cdd239e72b69
     name: tycho-api
@@ -1459,7 +1489,7 @@ entries:
   ui:
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2022-06-23T11:46:57.381497-04:00"
+    created: "2022-06-26T18:15:12.032607-04:00"
     description: A Helm chart for Kubernetes
     digest: 5d412c69bb390900f5c98fe6250d990b7bbc8be9becfc76738ce5e58f68bd649
     name: ui
@@ -1469,7 +1499,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2022-06-23T11:46:57.38067-04:00"
+    created: "2022-06-26T18:15:12.031732-04:00"
     description: A Helm chart for Kubernetes
     digest: 43ea023b189c298fe1f713a486e098956b30da72c2a88086efe71575cfa6552a
     name: ui
@@ -1479,7 +1509,7 @@ entries:
     version: 0.3.0-dev
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2022-06-23T11:46:57.379788-04:00"
+    created: "2022-06-26T18:15:12.030786-04:00"
     description: A Helm chart for Kubernetes
     digest: b0b612b16853f1d48cba0e7ee80df459042baf5fecbde7236e28781d4c639e61
     name: ui
@@ -1489,7 +1519,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2022-06-23T11:46:57.378816-04:00"
+    created: "2022-06-26T18:15:12.029943-04:00"
     description: A Helm chart for Kubernetes
     digest: efe258ce7d0af952b5867ffab1020aa43ebe88069c8b17e5a7738031dc31bac7
     name: ui
@@ -1497,4 +1527,4 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-23T11:46:56.227217-04:00"
+generated: "2022-06-26T18:15:10.887845-04:00"

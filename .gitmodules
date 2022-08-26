@@ -31,3 +31,6 @@
 [submodule "charts/socio-economic-chart"]
 	path = charts/socio-economic-chart
 	url = https://github.com/helxplatform/socio-economic-chart
+[submodule "charts/roadway-proximity-chart"]
+	path = charts/roadway-proximity-chart
+	url = https://github.com/helxplatform/roadway-proximity-chart

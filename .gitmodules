@@ -28,3 +28,6 @@
 [submodule "charts/cmaq-chart"]
 	path = charts/cmaq-chart
 	url = https://github.com/helxplatform/cmaq-chart
+[submodule "charts/socio-economic-chart"]
+	path = charts/socio-economic-chart
+	url = https://github.com/helxplatform/socio-economic-chart

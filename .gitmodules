@@ -25,3 +25,12 @@
 [submodule "charts/kubernetes-image-puller"]
 	path = charts/kubernetes-image-puller
 	url = git@github.com:helxplatform/kubernetes-image-puller.git
+[submodule "charts/cmaq-chart"]
+	path = charts/cmaq-chart
+	url = https://github.com/helxplatform/cmaq-chart
+[submodule "charts/socio-economic-chart"]
+	path = charts/socio-economic-chart
+	url = https://github.com/helxplatform/socio-economic-chart
+[submodule "charts/roadway-proximity-chart"]
+	path = charts/roadway-proximity-chart
+	url = https://github.com/helxplatform/roadway-proximity-chart

@@ -142,6 +142,92 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/backup-pvc-cronjob-0.2.0.tgz
     version: 0.2.0
+  cmaq:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-26T16:12:36.837902-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 47bcc03a2dcd81a85df157282add97dc14fb179ac19fed5889fdd7d92388e9ce
+    name: cmaq
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-26T16:12:36.832926-04:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.2
+    description: A Helm chart for Kubernetes
+    digest: 854bcf673830d6f6535376764bb0c839d2a8db643bb1d69d5d9d6ca6fa69cc2e
+    name: cmaq
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-26T16:12:36.827543-04:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.2
+    description: A Helm chart for Kubernetes
+    digest: 08fb5927eefba281e3d8a24c22193ee49b1537971fc8de91085de030da6f4559
+    name: cmaq
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-26T16:12:36.822443-04:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.2
+    description: A Helm chart for Kubernetes
+    digest: 2f234d542e095a77c6d734221da11c09bc2a177a3df0030fad392cef96859bcb
+    name: cmaq
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-26T16:12:36.814688-04:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.2
+    description: A Helm chart for Kubernetes
+    digest: af93561bb57e98b5c7793925ab127e2f118b9b9dff8d4867de67aced383e49be
+    name: cmaq
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-26T16:12:36.810276-04:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.2
+    description: A Helm chart for Kubernetes
+    digest: c7550cfc243f23238476c8487a24e2d6f229dae0ccce9634df98b00757a7d681
+    name: cmaq
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.0.tgz
+    version: 0.1.0
   dev-shell:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -803,7 +889,6 @@ entries:
     - https://helxplatform.github.io/helm-charts/image-utils-1.0.0.tgz
     version: 1.0.0
   kubernetes-image-puller:
-  - apiVersion: v1
     created: "2022-08-31T14:22:48.120413-04:00"
     description: The kubernetes image puller downloads che images ahead of time for
       faster workspace startup
@@ -990,6 +1075,31 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/pod-reaper-0.2.0.tgz
     version: 0.2.0
+  road:
+  - apiVersion: v2
+    created: "2022-08-26T16:12:37.590804-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 488813fa78e35e7177800e193ba2ecc279fefcbfafa56d4ee7ab039dd5444abc
+    name: road
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/road-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-26T16:12:37.589941-04:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.2
+    description: A Helm chart for Kubernetes
+    digest: 201fd80c5a9bf998a5687fb49869fb5d611ede8ec529d431e21002b32199e6ed
+    name: road
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/road-0.1.0.tgz
+    version: 0.1.0
   search:
   - apiVersion: v2
     appVersion: 2.9.0
@@ -1613,6 +1723,31 @@ entries:
     type: application
     urls:
     - https://helxplatform.github.io/helm-charts/search-ui-0.1.0.tgz
+    version: 0.1.0
+  social:
+  - apiVersion: v2
+    created: "2022-08-26T16:12:37.991425-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 069d931ac4c607dbb30093da5917d23bb2a8186d9d2790ce063d4a048bd2a4a7
+    name: social
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/social-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-26T16:12:37.988998-04:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.2
+    description: A Helm chart for Kubernetes
+    digest: 9bb0374e63020830b9fe41998cb1f859b9a7069ded67eb672cee28af48286116
+    name: social
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/social-0.1.0.tgz
     version: 0.1.0
   tranql:
   - apiVersion: v2

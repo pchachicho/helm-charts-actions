@@ -39,7 +39,7 @@ jobs:
 
     - name: Index Package
       run: | 
-        helm repo index --merge index.yaml --url=https://helxplatform.github.io/helm-charts/docs ./docs
+        helm repo index --merge ${{ github.workspace }}/docs/index.yaml --url=https://helxplatform.github.io/helm-charts/ ${{ github.workspace }}/docs
 
     - name: Get package name
       id: package

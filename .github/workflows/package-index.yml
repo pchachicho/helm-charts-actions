@@ -32,7 +32,7 @@ jobs:
         git clone https://github.com/${{ inputs.appRepo }}.git .
 
     - name: Check for Helx-Charts Package Updates
-      if: ${{ inputs.appRepo == 'joshua-seals/helx-chart-test'}}
+      if: ${{ inputs.appRepo == 'helxplatform/helx-chart'}}
       run: |
         cd /tmp/${{ github.repository_owner }}
         helm repo add helx-charts https://helxplatform.github.io/helm-charts

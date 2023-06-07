@@ -85,4 +85,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh pr create --fill --base develop --head ci_automation_${{ steps.packageName.outputs.packageName }} --reviewer pj-linebaugh
+        gh pr create --fill --base master --head develop --reviewer pj-linebaugh --reviewer waTeim

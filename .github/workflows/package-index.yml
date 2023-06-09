@@ -67,21 +67,22 @@ jobs:
       run: | 
         echo "package=$(ls /tmp | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
         
-    - name: Get packagename without extension
-      id: packageName
-      run: | 
-        BASE=${{ steps.package.outputs.package }}
-        echo $BASE
-        pNAME=${BASE%.*}
-        echo $pNAME
-        echo "packageName=$pNAME" >> "$GITHUB_OUTPUT" 
+#     - name: Get packagename without extension
+#       id: packageName
+#       run: | 
+#         BASE=${{ steps.package.outputs.package }}
+#         echo $BASE
+#         pNAME=${BASE%.*}
+#         echo $pNAME
+#         echo "packageName=$pNAME" >> "$GITHUB_OUTPUT" 
         
     - name: Commit index changes to develp branch
       uses: EndBug/add-and-commit@v9
       env:
         GH_TOKEN: ${{ github.token }}
       with:
-        author_name: Actions_${{ github.actor}}
+        new_branch: actions/${{ steps.package.outputs.package }}
+        author_name: ${{ github.actor}}
         message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
         add: "${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/${{ steps.package.outputs.package }}"
 
@@ -89,4 +90,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh pr create --fill --base master --head develop --reviewer ${{ inputs.actor }} --reviewer pj-linebaugh --reviewer waTeim
+        gh pr create --fill --base develop --head actions/${{ steps.package.outputs.package }} --reviewer ${{ inputs.actor }} --reviewer pj-linebaugh --reviewer waTeim

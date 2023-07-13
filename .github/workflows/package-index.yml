@@ -57,10 +57,12 @@ jobs:
         helm package --dependency-update ./${{ github.repository_owner }} --destination ${{ github.workspace }}/docs
         helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp
 
+    # The flag --merge doesn't have good documentation in helm official site
+    # See: https://github.com/helm/helm/issues/4482#issuecomment-452013778 
     - name: Index Package
       run: | 
         cp ${{ github.workspace }}/docs/index.yaml /tmp 
-        helm repo index --merge /tmp/index.yaml --url=https://helxplatform.github.io/helm-charts/ ${{ github.workspace }}/docs
+        helm repo index --url=https://helxplatform.github.io/helm-charts/ --merge ${{ github.workspace }}/docs /tmp/index.yaml 
 
     - name: Get package name
       id: package

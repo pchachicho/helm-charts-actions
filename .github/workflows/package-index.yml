@@ -51,18 +51,19 @@ jobs:
         helm package charts/nginx
         helm package charts/pod-reaper
         
+    # The package is also added to /tmp just so we can easily get the name in the 'Get Package Name' step.  
     - name: Package Chart 
       run: |
         cd /tmp
-        helm package --dependency-update ./${{ github.repository_owner }} --destination ${{ github.workspace }}/docs
+        helm package --dependency-update ./${{ github.repository_owner }} --destination ${{ github.workspace }}/docs 
         helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp
 
     # The flag --merge doesn't have good documentation in helm official site
     # See: https://github.com/helm/helm/issues/4482#issuecomment-452013778 
     - name: Index Package
       run: | 
-        cp ${{ github.workspace }}/docs/index.yaml /tmp 
-        helm repo index --url=https://helxplatform.github.io/helm-charts/ --merge ${{ github.workspace }}/docs /tmp/index.yaml 
+        helm repo index --url=https://helxplatform.github.io/helm-charts/ --merge ${{ github.workspace }}/docs/index.yaml /tmp/${{ github.repository_owner }}
+        mv /tmp/${{ github.repository_owner }}/index.yaml ${{ github.workspace }}/docs
 
     - name: Get package name
       id: package

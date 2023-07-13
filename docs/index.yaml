@@ -3,9 +3,9 @@ entries:
   ambassador:
   - apiVersion: v1
     appVersion: 1.14.4
-    created: "2023-07-11T23:04:47.974522764Z"
+    created: "2023-07-13T10:48:04.075576358Z"
     description: A Helm chart for Kubernetes
-    digest: 9f75bbcd7adcc8cd2136ddd862614163b0847a3e1eb8a18521cf8c24820c6725
+    digest: 46d75ed6d89a07bb1787a9205da774191700a7eca1a9492aa3110431fae369cc
     name: ambassador
     urls:
     - https://helxplatform.github.io/helm-charts/ambassador-0.2.0.tgz
@@ -22,7 +22,7 @@ entries:
   appstore:
   - apiVersion: v2
     appVersion: 3.1.0
-    created: "2023-07-11T23:04:48.062823462Z"
+    created: "2023-07-13T10:48:04.088286361Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -33,7 +33,7 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/appstore-3.2.1.tgz
+    - https://helxplatform.github.io/helm-charts/charts/appstore-3.2.1.tgz
     version: 3.2.1
   - apiVersion: v2
     appVersion: 3.0.0
@@ -263,13 +263,13 @@ entries:
   appstore-sockets:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-07-11T23:04:48.063615666Z"
+    created: "2023-07-13T10:48:04.088762198Z"
     description: A Helm chart for Kubernetes
     digest: b2360d1dcf6d33983d82b1483f54e15f91226632abfbb452359951d65ef394b6
     name: appstore-sockets
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/appstore-sockets-1.0.1.tgz
+    - https://helxplatform.github.io/helm-charts/charts/appstore-sockets-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
@@ -284,9 +284,9 @@ entries:
   backup-pvc-cronjob:
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2023-07-11T23:04:48.064234268Z"
+    created: "2023-07-13T10:48:04.07598229Z"
     description: A Helm chart for Kubernetes
-    digest: 351802babf43bc5841ee0ed0cb4ab458662d4b24425c8e71f8fd72f0323bbd87
+    digest: 19a7e204c50b349589e84ff1bbec00e7457e4614af34f37c8093c0b914e7f911
     name: backup-pvc-cronjob
     type: application
     urls:
@@ -1772,7 +1772,7 @@ entries:
   image-utils:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-07-11T23:04:49.872916528Z"
+    created: "2023-07-13T10:48:04.077062775Z"
     dependencies:
     - condition: imagepullsecret-patcher.enabled
       name: imagepullsecret-patcher
@@ -1783,7 +1783,7 @@ entries:
       repository: https://helxplatform.github.io/helm-charts
       version: 1.0.0
     description: Tools to help with help with management of images in the cluster.
-    digest: 4b394ae1bed6a4810f8eb059ed338d053f2fde5de6ec7e46ffd152a457083658
+    digest: f444c6ea2591fee7434a573c05c273bf30be3066758fd3bc27df14edcd81cd94
     name: image-utils
     type: application
     urls:
@@ -1802,7 +1802,7 @@ entries:
   monitoring:
   - apiVersion: v2
     appVersion: 0.2.2
-    created: "2023-07-11T23:04:50.032103647Z"
+    created: "2023-07-13T10:48:04.137366334Z"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -1829,7 +1829,7 @@ entries:
     name: monitoring
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/monitoring-0.2.2.tgz
+    - https://helxplatform.github.io/helm-charts/charts/monitoring-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.2.1
@@ -1927,9 +1927,9 @@ entries:
   nfs-server:
   - apiVersion: v2
     appVersion: "0.8"
-    created: "2023-07-11T23:04:50.032573949Z"
+    created: "2023-07-13T10:48:04.077576615Z"
     description: Creates an NFS server that can be used for PVCs.
-    digest: 9c485789056ebb731c723bc6b34d83ceea76b7a0327367e827002fa00fb73330
+    digest: 14e42e19bbede8973080de00d9af06496f074766b849b09b2508eeb9d95a75f6
     name: nfs-server
     type: application
     urls:
@@ -1938,10 +1938,10 @@ entries:
   nfsrods:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2023-07-11T23:04:50.033607353Z"
+    created: "2023-07-13T10:48:04.078227067Z"
     description: A standalone NFSv4.1 server (via nfs4j) with a Virtual File System
       implementation supporting the iRODS Data Management Platform.
-    digest: d993ef17a207950fe57c0882700520aeae98fea40529e3a85b59ff55cba01015
+    digest: 9e968a177fe095e33a632c5ce40b8b7f2790c9c335d181b0daabf0c654ac4db7
     name: nfsrods
     type: application
     urls:
@@ -1959,6 +1959,15 @@ entries:
     - https://helxplatform.github.io/helm-charts/nfsrods-2.0.3.tgz
     version: 2.0.3
   nginx:
+  - apiVersion: v1
+    appVersion: 1.0.13
+    created: "2023-07-13T10:48:04.078947724Z"
+    description: A Helm chart for Kubernetes
+    digest: c1cfa868e24e9331b36cc97165f1e425b179e14222623cc4f0d8a63c1bfb460c
+    name: nginx
+    urls:
+    - https://helxplatform.github.io/helm-charts/nginx-0.4.2.tgz
+    version: 0.4.2
   - apiVersion: v1
     appVersion: 1.0.13
     created: "2023-07-11T23:04:50.03517126Z"
@@ -1989,9 +1998,9 @@ entries:
   pod-reaper:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2023-07-11T23:04:50.036461466Z"
+    created: "2023-07-13T10:48:04.079316753Z"
     description: A Helm chart for pod-reaper
-    digest: 04908feb40f3afaa1135a8fded8f5f7613775dd6d3bb810f92a5106c2eaa2f09
+    digest: 93520a46cfabca5847d857279f1f5c714f6f8cdf463ea815ccd40017026f6323
     home: https://github.com/target/pod-reaper
     name: pod-reaper
     urls:
@@ -2066,7 +2075,7 @@ entries:
   search:
   - apiVersion: v2
     appVersion: 2.9.8
-    created: "2023-07-11T23:04:50.627594333Z"
+    created: "2023-07-13T10:48:04.165273236Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2094,7 +2103,7 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/search-2.0.1.tgz
+    - https://helxplatform.github.io/helm-charts/charts/search-2.0.1.tgz
     version: 2.0.1
   - apiVersion: v2
     appVersion: 2.9.0
@@ -2928,24 +2937,24 @@ entries:
   tycho-api:
   - apiVersion: v2
     appVersion: 1.0.29
-    created: "2023-07-11T23:04:50.702421171Z"
+    created: "2023-07-13T10:48:04.165820379Z"
     description: A Helm chart for Kubernetes
     digest: ad204054c0409cb7286ea3c889cdc48e7875541a5c48d8932dc4cdd239e72b69
     name: tycho-api
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/tycho-api-0.2-dev.tgz
+    - https://helxplatform.github.io/helm-charts/charts/tycho-api-0.2-dev.tgz
     version: 0.2-dev
   ui:
   - apiVersion: v2
     appVersion: 5.0.0
-    created: "2023-07-11T23:04:50.705420984Z"
+    created: "2023-07-13T10:48:04.166431327Z"
     description: A Helm chart for Kubernetes
     digest: 9cc0dd922a48fdf9810d49c6d0f23b0510af15e6ea531cb03298e9c5acad7261
     name: ui
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/ui-1.0.0.tgz
+    - https://helxplatform.github.io/helm-charts/charts/ui-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
     appVersion: 2.1.0
@@ -2997,4 +3006,4 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-11T23:04:47.973580659Z"
+generated: "2023-07-13T10:48:04.074981611Z"

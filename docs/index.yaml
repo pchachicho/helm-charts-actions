@@ -3,7 +3,7 @@ entries:
   ambassador:
   - apiVersion: v1
     appVersion: 1.14.4
-    created: "2023-07-14T14:05:33.464118-04:00"
+    created: "2023-07-17T12:05:52.079015-04:00"
     description: A Helm chart for Kubernetes
     digest: 9f75bbcd7adcc8cd2136ddd862614163b0847a3e1eb8a18521cf8c24820c6725
     name: ambassador
@@ -12,7 +12,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: 1.12.0
-    created: "2023-07-14T14:05:33.463419-04:00"
+    created: "2023-07-17T12:05:52.078345-04:00"
     description: A Helm chart for Kubernetes
     digest: 91b3aaeab29fadad9b091cae81989e31899a7be268f4cb091fdd221ca6f20834
     name: ambassador
@@ -22,7 +22,7 @@ entries:
   appstore:
   - apiVersion: v2
     appVersion: 3.1.0
-    created: "2023-07-14T14:05:33.541286-04:00"
+    created: "2023-07-17T12:05:52.167224-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -37,7 +37,7 @@ entries:
     version: 3.2.1
   - apiVersion: v2
     appVersion: 3.0.0
-    created: "2023-07-14T14:05:33.536282-04:00"
+    created: "2023-07-17T12:05:52.160425-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -52,7 +52,7 @@ entries:
     version: 3.1.0
   - apiVersion: v2
     appVersion: 3.0.0
-    created: "2023-07-14T14:05:33.530488-04:00"
+    created: "2023-07-17T12:05:52.155124-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -67,7 +67,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-07-14T14:05:33.525157-04:00"
+    created: "2023-07-17T12:05:52.148506-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -82,7 +82,7 @@ entries:
     version: 1.7.0
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2023-07-14T14:05:33.519206-04:00"
+    created: "2023-07-17T12:05:52.140457-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -97,7 +97,7 @@ entries:
     version: 1.6.2
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2023-07-14T14:05:33.514195-04:00"
+    created: "2023-07-17T12:05:52.134661-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -112,7 +112,7 @@ entries:
     version: 1.6.1
   - apiVersion: v2
     appVersion: 1.5.0
-    created: "2023-07-14T14:05:33.50773-04:00"
+    created: "2023-07-17T12:05:52.127484-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -127,7 +127,7 @@ entries:
     version: 1.5.1
   - apiVersion: v2
     appVersion: 1.4.1
-    created: "2023-07-14T14:05:33.503326-04:00"
+    created: "2023-07-17T12:05:52.123073-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -142,7 +142,7 @@ entries:
     version: 1.2.1
   - apiVersion: v2
     appVersion: 1.4.0
-    created: "2023-07-14T14:05:33.498194-04:00"
+    created: "2023-07-17T12:05:52.117135-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -157,7 +157,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 1.4.0
-    created: "2023-07-14T14:05:33.493944-04:00"
+    created: "2023-07-17T12:05:52.112919-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -172,7 +172,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.3.1-alpha
-    created: "2023-07-14T14:05:33.489623-04:00"
+    created: "2023-07-17T12:05:52.107423-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -187,7 +187,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.3.1
-    created: "2023-07-14T14:05:33.483738-04:00"
+    created: "2023-07-17T12:05:52.102532-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -202,7 +202,7 @@ entries:
     version: 0.6.3
   - apiVersion: v2
     appVersion: 1.3.1-dev
-    created: "2023-07-14T14:05:33.479473-04:00"
+    created: "2023-07-17T12:05:52.097519-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -217,7 +217,7 @@ entries:
     version: 0.6.2-dev
   - apiVersion: v2
     appVersion: 1.3.1-dev
-    created: "2023-07-14T14:05:33.47402-04:00"
+    created: "2023-07-17T12:05:52.089446-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -232,7 +232,7 @@ entries:
     version: 0.6.1-dev
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2023-07-14T14:05:33.467772-04:00"
+    created: "2023-07-17T12:05:52.082591-04:00"
     description: A Helm chart for Kubernetes
     digest: 659ece6774b61b94e1e097002403e853b5fae8c06b3b2f68786b561068e564ae
     name: appstore
@@ -242,7 +242,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2023-07-14T14:05:33.466418-04:00"
+    created: "2023-07-17T12:05:52.081499-04:00"
     description: A Helm chart for Kubernetes
     digest: bf150176fb3c46cfd1912178dbd484a6a3d1cabbcf3d38c929b6b632a511194e
     name: appstore
@@ -252,7 +252,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 1.2.dev-bcf0e7ca
-    created: "2023-07-14T14:05:33.465493-04:00"
+    created: "2023-07-17T12:05:52.080485-04:00"
     description: A Helm chart for Kubernetes
     digest: 4974160de1798c1c50e4a4e04190e8f9ebb410f8ba2afc56e1672b5a9ef8b4d4
     name: appstore
@@ -263,7 +263,7 @@ entries:
   appstore-sockets:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-07-14T14:05:33.541991-04:00"
+    created: "2023-07-17T12:05:52.168598-04:00"
     description: A Helm chart for Kubernetes
     digest: b2360d1dcf6d33983d82b1483f54e15f91226632abfbb452359951d65ef394b6
     name: appstore-sockets
@@ -273,7 +273,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-07-14T14:05:33.541623-04:00"
+    created: "2023-07-17T12:05:52.168088-04:00"
     description: A Helm chart for Kubernetes
     digest: c52b2d43ef98d4008cffa5926d2ad58b14ba947802d9cea0f4f287061c1057f8
     name: appstore-sockets
@@ -284,7 +284,7 @@ entries:
   backup-pvc-cronjob:
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2023-07-14T14:05:33.543182-04:00"
+    created: "2023-07-17T12:05:52.169607-04:00"
     description: A Helm chart for Kubernetes
     digest: 351802babf43bc5841ee0ed0cb4ab458662d4b24425c8e71f8fd72f0323bbd87
     name: backup-pvc-cronjob
@@ -294,7 +294,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2023-07-14T14:05:33.542559-04:00"
+    created: "2023-07-17T12:05:52.169066-04:00"
     description: A Helm chart for Kubernetes
     digest: 949a26bef023fef7b7356f3b9f4bdd5c8d9218af97fc128073bb3990224be689
     name: backup-pvc-cronjob
@@ -305,7 +305,7 @@ entries:
   cmaq:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-07-14T14:05:33.57277-04:00"
+    created: "2023-07-17T12:05:52.198746-04:00"
     description: A Helm chart for Kubernetes
     digest: 47bcc03a2dcd81a85df157282add97dc14fb179ac19fed5889fdd7d92388e9ce
     name: cmaq
@@ -315,7 +315,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-07-14T14:05:33.568825-04:00"
+    created: "2023-07-17T12:05:52.194677-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -330,7 +330,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-07-14T14:05:33.563914-04:00"
+    created: "2023-07-17T12:05:52.190389-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -345,7 +345,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-07-14T14:05:33.55812-04:00"
+    created: "2023-07-17T12:05:52.185198-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -360,7 +360,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-07-14T14:05:33.553815-04:00"
+    created: "2023-07-17T12:05:52.179252-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -375,7 +375,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-07-14T14:05:33.548956-04:00"
+    created: "2023-07-17T12:05:52.174368-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -391,7 +391,7 @@ entries:
   dev-shell:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2023-07-14T14:05:33.575177-04:00"
+    created: "2023-07-17T12:05:52.200873-04:00"
     description: A Helm chart for Kubernetes
     digest: 234f7ee717f1b6921bba96b48d747ae8847206150046fc40b885c2c9b45aa9b5
     name: dev-shell
@@ -401,7 +401,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-07-14T14:05:33.573726-04:00"
+    created: "2023-07-17T12:05:52.199468-04:00"
     description: A Helm chart for Kubernetes
     digest: 222788564de3b070532c3490fcfbfe935bc76a3524aec6a6e7c7f028a6ba19fe
     name: dev-shell
@@ -412,7 +412,70 @@ entries:
   helx:
   - apiVersion: v2
     appVersion: 3.1.0
-    created: "2023-07-14T14:05:35.03219-04:00"
+    created: "2023-07-17T12:05:53.664559-04:00"
+    dependencies:
+    - condition: ambassador.enabled
+      name: ambassador
+      repository: ""
+      version: ^0.2.0
+    - condition: appstore.enabled
+      name: appstore
+      repository: '@helx-charts'
+      version: ^3.1.0
+    - condition: backup-pvc-cronjob.enabled
+      name: backup-pvc-cronjob
+      repository: ""
+      version: ^0.2.1
+    - condition: image-utils.enabled
+      name: image-utils
+      repository: ""
+      version: ^1.0.0
+    - condition: monitoring.enabled
+      name: monitoring
+      repository: '@helx-charts'
+      version: ^0.2.0
+    - condition: nfs-server.enabled
+      name: nfs-server
+      repository: ""
+      version: ^0.2.0
+    - condition: nfsrods.enabled
+      name: nfsrods
+      repository: ""
+      version: ^2.0.0
+    - condition: nginx.enabled
+      name: nginx
+      repository: ""
+      version: ^0.4.0
+    - condition: pod-reaper.enabled
+      name: pod-reaper
+      repository: ""
+      version: ^0.2.0
+    - condition: search.enabled
+      name: search
+      repository: '@helx-charts'
+      version: ^2.0.0
+    - condition: tycho-api.enabled
+      name: tycho-api
+      repository: '@helx-charts'
+      version: 0.2-dev
+    - condition: ui.enabled
+      name: ui
+      repository: '@helx-charts'
+      version: ^1.0.0
+    - condition: appstore-sockets.enabled
+      name: appstore-sockets
+      repository: '@helx-charts'
+      version: ^1.0.0
+    description: A Helm chart for deploying HeLx to Kubernetes.
+    digest: 260a10499a2b5058d90672a1abdf9ef21240e37a330aaa1396c0047ea98e6b59
+    name: helx
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/helx-3.1.3.tgz
+    version: 3.1.3
+  - apiVersion: v2
+    appVersion: 3.1.0
+    created: "2023-07-17T12:05:53.605655-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -475,7 +538,7 @@ entries:
     version: 3.1.2
   - apiVersion: v2
     appVersion: 3.0.0
-    created: "2023-07-14T14:05:34.969756-04:00"
+    created: "2023-07-17T12:05:53.54717-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -534,7 +597,7 @@ entries:
     version: 3.0.1
   - apiVersion: v2
     appVersion: 3.0.0
-    created: "2023-07-14T14:05:34.905831-04:00"
+    created: "2023-07-17T12:05:53.489204-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -593,7 +656,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 2.4.0
-    created: "2023-07-14T14:05:34.846473-04:00"
+    created: "2023-07-17T12:05:53.430328-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -648,7 +711,7 @@ entries:
     version: 1.9.1
   - apiVersion: v2
     appVersion: 2.4.0
-    created: "2023-07-14T14:05:34.779874-04:00"
+    created: "2023-07-17T12:05:53.37344-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -703,7 +766,7 @@ entries:
     version: 1.9.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-07-14T14:05:34.711941-04:00"
+    created: "2023-07-17T12:05:53.303284-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -758,7 +821,7 @@ entries:
     version: 1.8.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-07-14T14:05:34.653114-04:00"
+    created: "2023-07-17T12:05:53.24283-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -813,7 +876,7 @@ entries:
     version: 1.7.1
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-07-14T14:05:34.590083-04:00"
+    created: "2023-07-17T12:05:53.185327-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -868,7 +931,7 @@ entries:
     version: 1.7.0
   - apiVersion: v2
     appVersion: 2.2.0
-    created: "2023-07-14T14:05:34.529695-04:00"
+    created: "2023-07-17T12:05:53.126274-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -923,7 +986,7 @@ entries:
     version: 1.6.0
   - apiVersion: v2
     appVersion: 2.2.0
-    created: "2023-07-14T14:05:34.470439-04:00"
+    created: "2023-07-17T12:05:53.063858-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -978,7 +1041,7 @@ entries:
     version: 1.5.2
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-07-14T14:05:34.4106-04:00"
+    created: "2023-07-17T12:05:53.004184-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1033,7 +1096,7 @@ entries:
     version: 1.3.4
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-07-14T14:05:34.349498-04:00"
+    created: "2023-07-17T12:05:52.948495-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1088,7 +1151,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-07-14T14:05:34.286671-04:00"
+    created: "2023-07-17T12:05:52.890884-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1143,7 +1206,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-07-14T14:05:34.226512-04:00"
+    created: "2023-07-17T12:05:52.831324-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1198,7 +1261,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-07-14T14:05:34.167643-04:00"
+    created: "2023-07-17T12:05:52.775845-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1253,7 +1316,7 @@ entries:
     version: 1.1.3
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-07-14T14:05:34.111895-04:00"
+    created: "2023-07-17T12:05:52.720982-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1308,7 +1371,7 @@ entries:
     version: 1.1.2
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-07-14T14:05:34.050944-04:00"
+    created: "2023-07-17T12:05:52.665175-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1363,7 +1426,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-07-14T14:05:33.988121-04:00"
+    created: "2023-07-17T12:05:52.608807-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1418,7 +1481,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2023-07-14T14:05:33.932203-04:00"
+    created: "2023-07-17T12:05:52.552501-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1473,7 +1536,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.10.0
-    created: "2023-07-14T14:05:33.876317-04:00"
+    created: "2023-07-17T12:05:52.497986-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1528,7 +1591,7 @@ entries:
     version: 0.15.0
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2023-07-14T14:05:33.815502-04:00"
+    created: "2023-07-17T12:05:52.44217-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1583,7 +1646,7 @@ entries:
     version: 0.13.1
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2023-07-14T14:05:33.754841-04:00"
+    created: "2023-07-17T12:05:52.385626-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1642,7 +1705,7 @@ entries:
     version: 0.12.2
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2023-07-14T14:05:33.694989-04:00"
+    created: "2023-07-17T12:05:52.321782-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1701,7 +1764,7 @@ entries:
     version: 0.12.0
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2023-07-14T14:05:33.633681-04:00"
+    created: "2023-07-17T12:05:52.259865-04:00"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1761,7 +1824,7 @@ entries:
   hubhub:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-07-14T14:05:35.032999-04:00"
+    created: "2023-07-17T12:05:53.665342-04:00"
     description: A Helm chart for Kubernetes
     digest: 950556a9aaf381030ecb8615e75a02dc3a9bea0daa061d0b14125a02e4d71d7d
     name: hubhub
@@ -1772,7 +1835,7 @@ entries:
   image-utils:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-07-14T14:05:35.034332-04:00"
+    created: "2023-07-17T12:05:53.666443-04:00"
     dependencies:
     - condition: imagepullsecret-patcher.enabled
       name: imagepullsecret-patcher
@@ -1791,7 +1854,7 @@ entries:
     version: 1.0.0
   kubernetes-image-puller:
   - apiVersion: v1
-    created: "2023-07-14T14:05:35.034716-04:00"
+    created: "2023-07-17T12:05:53.666828-04:00"
     description: The kubernetes image puller downloads che images ahead of time for
       faster workspace startup
     digest: 5eadd31ed669dfd0b31585bc827c2067e9e8c76d8303a1a1ebc5f41d40544f94
@@ -1802,7 +1865,7 @@ entries:
   monitoring:
   - apiVersion: v2
     appVersion: 0.2.2
-    created: "2023-07-14T14:05:35.16595-04:00"
+    created: "2023-07-17T12:05:53.792012-04:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -1833,7 +1896,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2023-07-14T14:05:35.133092-04:00"
+    created: "2023-07-17T12:05:53.760685-04:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -1864,7 +1927,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2023-07-14T14:05:35.100769-04:00"
+    created: "2023-07-17T12:05:53.730303-04:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -1895,7 +1958,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-07-14T14:05:35.065809-04:00"
+    created: "2023-07-17T12:05:53.698046-04:00"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -1927,7 +1990,7 @@ entries:
   nfs-server:
   - apiVersion: v2
     appVersion: "0.8"
-    created: "2023-07-14T14:05:35.166539-04:00"
+    created: "2023-07-17T12:05:53.792605-04:00"
     description: Creates an NFS server that can be used for PVCs.
     digest: 9c485789056ebb731c723bc6b34d83ceea76b7a0327367e827002fa00fb73330
     name: nfs-server
@@ -1938,7 +2001,7 @@ entries:
   nfsrods:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2023-07-14T14:05:35.168075-04:00"
+    created: "2023-07-17T12:05:53.794219-04:00"
     description: A standalone NFSv4.1 server (via nfs4j) with a Virtual File System
       implementation supporting the iRODS Data Management Platform.
     digest: d993ef17a207950fe57c0882700520aeae98fea40529e3a85b59ff55cba01015
@@ -1949,7 +2012,7 @@ entries:
     version: 2.0.4
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2023-07-14T14:05:35.167221-04:00"
+    created: "2023-07-17T12:05:53.793336-04:00"
     description: A standalone NFSv4.1 server (via nfs4j) with a Virtual File System
       implementation supporting the iRODS Data Management Platform.
     digest: b672c4215882e6bc7292ce905ea81c078e80f567f532610a918be28c971763cb
@@ -1961,7 +2024,7 @@ entries:
   nginx:
   - apiVersion: v1
     appVersion: 1.0.13
-    created: "2023-07-14T14:05:35.170676-04:00"
+    created: "2023-07-17T12:05:53.79733-04:00"
     description: A Helm chart for Kubernetes
     digest: e096e429251c9abd5e180ba94e164666c1ad6665171141b7b6bc8267b2f2d876
     name: nginx
@@ -1970,7 +2033,7 @@ entries:
     version: 0.4.2
   - apiVersion: v1
     appVersion: 1.0.13
-    created: "2023-07-14T14:05:35.170099-04:00"
+    created: "2023-07-17T12:05:53.796368-04:00"
     description: A Helm chart for Kubernetes
     digest: 3c48a7b94c9189705e50c1989ad1025b2bd1eeba5c72b1dae6506702ec69ff27
     name: nginx
@@ -1979,7 +2042,7 @@ entries:
     version: 0.4.1
   - apiVersion: v1
     appVersion: 1.0.13
-    created: "2023-07-14T14:05:35.1695-04:00"
+    created: "2023-07-17T12:05:53.795606-04:00"
     description: A Helm chart for Kubernetes
     digest: ff8e4af62c9abcd9440997e30e7dff6c6aeda35da6696af67665b1077b55974d
     name: nginx
@@ -1988,7 +2051,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: 1.0.13
-    created: "2023-07-14T14:05:35.168817-04:00"
+    created: "2023-07-17T12:05:53.794916-04:00"
     description: A Helm chart for Kubernetes
     digest: 752146e65b1f9363bedd5e2ab1b8edcd791b83531129541d27354deac2412988
     name: nginx
@@ -1998,7 +2061,17 @@ entries:
   pod-reaper:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2023-07-14T14:05:35.17296-04:00"
+    created: "2023-07-17T12:05:53.799901-04:00"
+    description: A Helm chart for pod-reaper
+    digest: 9b64afa2b3233e1b3d0554907597dd247a1f4ef130e2a86a3bf7268f99745098
+    home: https://github.com/target/pod-reaper
+    name: pod-reaper
+    urls:
+    - https://helxplatform.github.io/helm-charts/pod-reaper-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v1
+    appVersion: 1.1.2
+    created: "2023-07-17T12:05:53.799357-04:00"
     description: A Helm chart for pod-reaper
     digest: 04908feb40f3afaa1135a8fded8f5f7613775dd6d3bb810f92a5106c2eaa2f09
     home: https://github.com/target/pod-reaper
@@ -2008,7 +2081,7 @@ entries:
     version: 0.2.3
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2023-07-14T14:05:35.172356-04:00"
+    created: "2023-07-17T12:05:53.798783-04:00"
     description: A Helm chart for pod-reaper
     digest: 465b25cde87eb7413774a88fad96a3a2078c4364eb7b95c6c83422993d529870
     home: https://github.com/target/pod-reaper
@@ -2018,7 +2091,7 @@ entries:
     version: 0.2.2
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2023-07-14T14:05:35.171816-04:00"
+    created: "2023-07-17T12:05:53.798388-04:00"
     description: A Helm chart for pod-reaper
     digest: 9e1c86fdcbb02566ca31e1bbdec545ac7e8a1c6b3d478614d5c3fd7f8f905d27
     home: https://github.com/target/pod-reaper
@@ -2028,7 +2101,7 @@ entries:
     version: 0.2.1
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2023-07-14T14:05:35.171207-04:00"
+    created: "2023-07-17T12:05:53.797825-04:00"
     description: A Helm chart for pod-reaper
     digest: fbfde60eb79e0d5eb809cfcf15906888e89958748bb7d9060b77be7417f5b328
     home: https://github.com/target/pod-reaper
@@ -2039,7 +2112,7 @@ entries:
   redis-insight:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-07-14T14:05:35.173551-04:00"
+    created: "2023-07-17T12:05:53.800486-04:00"
     description: A Helm chart for Kubernetes
     digest: 0a9a48c2ae44a7415affb9354b52a9636ddbd06fd972399da2c1fc2944bb2d95
     name: redis-insight
@@ -2049,7 +2122,7 @@ entries:
     version: 0.1.0
   road:
   - apiVersion: v2
-    created: "2023-07-14T14:05:35.18015-04:00"
+    created: "2023-07-17T12:05:53.806409-04:00"
     description: A Helm chart for Kubernetes
     digest: 488813fa78e35e7177800e193ba2ecc279fefcbfafa56d4ee7ab039dd5444abc
     name: road
@@ -2059,7 +2132,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-07-14T14:05:35.178426-04:00"
+    created: "2023-07-17T12:05:53.804944-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2075,7 +2148,7 @@ entries:
   search:
   - apiVersion: v2
     appVersion: 2.9.8
-    created: "2023-07-14T14:05:35.666439-04:00"
+    created: "2023-07-17T12:05:54.27357-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2107,7 +2180,7 @@ entries:
     version: 2.0.1
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-07-14T14:05:35.647622-04:00"
+    created: "2023-07-17T12:05:54.252721-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2139,7 +2212,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-07-14T14:05:35.626732-04:00"
+    created: "2023-07-17T12:05:54.232088-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2167,7 +2240,7 @@ entries:
     version: 1.9.3
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-07-14T14:05:35.606488-04:00"
+    created: "2023-07-17T12:05:54.212226-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2195,7 +2268,7 @@ entries:
     version: 1.9.0
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-07-14T14:05:35.583468-04:00"
+    created: "2023-07-17T12:05:54.189937-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2223,7 +2296,7 @@ entries:
     version: 1.8.1
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-07-14T14:05:35.562492-04:00"
+    created: "2023-07-17T12:05:54.171972-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2251,7 +2324,7 @@ entries:
     version: 1.8.0
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-07-14T14:05:35.543488-04:00"
+    created: "2023-07-17T12:05:54.154074-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2279,7 +2352,7 @@ entries:
     version: 1.7.0
   - apiVersion: v2
     appVersion: 2.8.0
-    created: "2023-07-14T14:05:35.523979-04:00"
+    created: "2023-07-17T12:05:54.135359-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2307,7 +2380,7 @@ entries:
     version: 1.6.4
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-07-14T14:05:35.503446-04:00"
+    created: "2023-07-17T12:05:54.116692-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2335,7 +2408,7 @@ entries:
     version: 1.6.3
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-07-14T14:05:35.4851-04:00"
+    created: "2023-07-17T12:05:54.098353-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2363,7 +2436,7 @@ entries:
     version: 1.6.2
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-07-14T14:05:35.465302-04:00"
+    created: "2023-07-17T12:05:54.079587-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2391,7 +2464,7 @@ entries:
     version: 1.6.0-dev
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-07-14T14:05:35.437577-04:00"
+    created: "2023-07-17T12:05:54.053024-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2419,7 +2492,7 @@ entries:
     version: 1.5.0-dev
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-07-14T14:05:35.419306-04:00"
+    created: "2023-07-17T12:05:54.035124-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2447,7 +2520,7 @@ entries:
     version: 1.4.2
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-07-14T14:05:35.398399-04:00"
+    created: "2023-07-17T12:05:54.014873-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2475,7 +2548,7 @@ entries:
     version: 1.4.1
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-07-14T14:05:35.380928-04:00"
+    created: "2023-07-17T12:05:53.997243-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2503,7 +2576,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-07-14T14:05:35.363872-04:00"
+    created: "2023-07-17T12:05:53.979015-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2531,7 +2604,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-07-14T14:05:35.348097-04:00"
+    created: "2023-07-17T12:05:53.962815-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2558,7 +2631,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2023-07-14T14:05:35.331766-04:00"
+    created: "2023-07-17T12:05:53.946441-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2585,7 +2658,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2023-07-14T14:05:35.315354-04:00"
+    created: "2023-07-17T12:05:53.929827-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2612,7 +2685,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.1.0-rc0.tgz
     version: 1.1.0-rc0
   - apiVersion: v2
-    created: "2023-07-14T14:05:35.290395-04:00"
+    created: "2023-07-17T12:05:53.904923-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2639,7 +2712,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2023-07-14T14:05:35.264441-04:00"
+    created: "2023-07-17T12:05:53.880707-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2666,7 +2739,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2023-07-14T14:05:35.23735-04:00"
+    created: "2023-07-17T12:05:53.855622-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2693,7 +2766,7 @@ entries:
     - https://helxplatform.github.io/helm-charts/search-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2023-07-14T14:05:35.210556-04:00"
+    created: "2023-07-17T12:05:53.831168-04:00"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2722,7 +2795,7 @@ entries:
   search-api:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2023-07-14T14:05:35.68365-04:00"
+    created: "2023-07-17T12:05:54.292019-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -2741,7 +2814,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2023-07-14T14:05:35.677297-04:00"
+    created: "2023-07-17T12:05:54.285525-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -2760,7 +2833,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2023-07-14T14:05:35.67232-04:00"
+    created: "2023-07-17T12:05:54.279821-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -2780,7 +2853,7 @@ entries:
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2023-07-14T14:05:35.684305-04:00"
+    created: "2023-07-17T12:05:54.292806-04:00"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
@@ -2790,7 +2863,7 @@ entries:
     version: 0.1.0
   social:
   - apiVersion: v2
-    created: "2023-07-14T14:05:35.690299-04:00"
+    created: "2023-07-17T12:05:54.299464-04:00"
     description: A Helm chart for Kubernetes
     digest: 069d931ac4c607dbb30093da5917d23bb2a8186d9d2790ce063d4a048bd2a4a7
     name: social
@@ -2800,7 +2873,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-07-14T14:05:35.689029-04:00"
+    created: "2023-07-17T12:05:54.297916-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2816,7 +2889,7 @@ entries:
   tranql:
   - apiVersion: v2
     appVersion: 0.4.dev2
-    created: "2023-07-14T14:05:35.730744-04:00"
+    created: "2023-07-17T12:05:54.34026-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2831,7 +2904,7 @@ entries:
     version: 0.4.2
   - apiVersion: v2
     appVersion: 0.4.dev2
-    created: "2023-07-14T14:05:35.724601-04:00"
+    created: "2023-07-17T12:05:54.334755-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2846,7 +2919,7 @@ entries:
     version: 0.4.1-dev
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2023-07-14T14:05:35.715209-04:00"
+    created: "2023-07-17T12:05:54.32544-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2861,7 +2934,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2023-07-14T14:05:35.711079-04:00"
+    created: "2023-07-17T12:05:54.321263-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2876,7 +2949,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: develop-0.0.63
-    created: "2023-07-14T14:05:35.707161-04:00"
+    created: "2023-07-17T12:05:54.31721-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2891,7 +2964,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: develop-0.0.62
-    created: "2023-07-14T14:05:35.702461-04:00"
+    created: "2023-07-17T12:05:54.312609-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2906,7 +2979,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: develop-0.0.59
-    created: "2023-07-14T14:05:35.698646-04:00"
+    created: "2023-07-17T12:05:54.308665-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2921,7 +2994,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: develop-0.0.58
-    created: "2023-07-14T14:05:35.693985-04:00"
+    created: "2023-07-17T12:05:54.304539-04:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2937,7 +3010,7 @@ entries:
   tycho-api:
   - apiVersion: v2
     appVersion: 1.0.29
-    created: "2023-07-14T14:05:35.731402-04:00"
+    created: "2023-07-17T12:05:54.340825-04:00"
     description: A Helm chart for Kubernetes
     digest: ad204054c0409cb7286ea3c889cdc48e7875541a5c48d8932dc4cdd239e72b69
     name: tycho-api
@@ -2948,7 +3021,7 @@ entries:
   ui:
   - apiVersion: v2
     appVersion: 5.0.0
-    created: "2023-07-14T14:05:35.736446-04:00"
+    created: "2023-07-17T12:05:54.345296-04:00"
     description: A Helm chart for Kubernetes
     digest: 9cc0dd922a48fdf9810d49c6d0f23b0510af15e6ea531cb03298e9c5acad7261
     name: ui
@@ -2958,7 +3031,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2023-07-14T14:05:35.735576-04:00"
+    created: "2023-07-17T12:05:54.344438-04:00"
     description: A Helm chart for Kubernetes
     digest: 2e564d1cda4d1442861fc99a6a9af41916c4006edf8ebf7d745cd03987155699
     name: ui
@@ -2968,7 +3041,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2023-07-14T14:05:35.734698-04:00"
+    created: "2023-07-17T12:05:54.343788-04:00"
     description: A Helm chart for Kubernetes
     digest: 5d412c69bb390900f5c98fe6250d990b7bbc8be9becfc76738ce5e58f68bd649
     name: ui
@@ -2978,7 +3051,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2023-07-14T14:05:35.733948-04:00"
+    created: "2023-07-17T12:05:54.342956-04:00"
     description: A Helm chart for Kubernetes
     digest: 43ea023b189c298fe1f713a486e098956b30da72c2a88086efe71575cfa6552a
     name: ui
@@ -2988,7 +3061,7 @@ entries:
     version: 0.3.0-dev
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2023-07-14T14:05:35.733194-04:00"
+    created: "2023-07-17T12:05:54.342287-04:00"
     description: A Helm chart for Kubernetes
     digest: b0b612b16853f1d48cba0e7ee80df459042baf5fecbde7236e28781d4c639e61
     name: ui
@@ -2998,7 +3071,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2023-07-14T14:05:35.732169-04:00"
+    created: "2023-07-17T12:05:54.341537-04:00"
     description: A Helm chart for Kubernetes
     digest: efe258ce7d0af952b5867ffab1020aa43ebe88069c8b17e5a7738031dc31bac7
     name: ui
@@ -3006,4 +3079,4 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-14T14:05:33.46234-04:00"
+generated: "2023-07-17T12:05:52.076921-04:00"

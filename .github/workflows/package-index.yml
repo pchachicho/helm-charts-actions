@@ -80,16 +80,8 @@ jobs:
       run: | 
         echo "package=$(ls /tmp | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
         
-#     - name: Get packagename without extension
-#       id: packageName
-#       run: | 
-#         BASE=${{ steps.package.outputs.package }}
-#         echo $BASE
-#         pNAME=${BASE%.*}
-#         echo $pNAME
-#         echo "packageName=$pNAME" >> "$GITHUB_OUTPUT" 
-        
     - name: Commit index changes to develp branch
+      if: ${{ inputs.appRepo != 'helxplatform/helx-chart'}}
       uses: EndBug/add-and-commit@v9
       env:
         GH_TOKEN: ${{ github.token }}
@@ -105,9 +97,9 @@ jobs:
       env:
         GH_TOKEN: ${{ github.token }}
       with:
-        new_branch: actions/${{ steps.package.outputs.package }}
+        new_branch: origin actions/${{ steps.package.outputs.package }}
         author_name: ${{ github.actor}}
-        message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
+        message: "Adding helx-chart apps, ${{ steps.package.outputs.package }} and index.yaml"
         add: "${{ github.workspace }}/docs/*"
     
 

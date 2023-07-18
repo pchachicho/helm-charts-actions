@@ -35,6 +35,9 @@ jobs:
         cd /tmp/${{ github.repository_owner }}
         git clone https://github.com/${{ inputs.appRepo }}.git .
 
+
+    # Below we package everything up for helx-charts package and 
+    # for each chart to be individually indexed from helm-charts itself.
     - name: Check for Helx-Charts Package Updates
       if: ${{ inputs.appRepo == 'helxplatform/helx-chart'}}
       run: |
@@ -44,13 +47,20 @@ jobs:
         helm dependency update ./charts/image-utils
         helm dependency update
         helm package charts/ambassador
+        helm package charts/ambassador --destination ${{ github.workspace }}/docs
         helm package charts/backup-pvc-cronjob
+        helm package charts/backup-pvc-cronjob --destination ${{ github.workspace }}/docs
         helm package charts/image-utils
+        helm package charts/image-utils --destination ${{ github.workspace }}/docs
         helm package charts/nfs-server
+        helm package charts/nfs-server --destination ${{ github.workspace }}/docs
         helm package charts/nfsrods
+        helm package charts/nfsrods --destination ${{ github.workspace }}/docs
         helm package charts/nginx
+        helm package charts/nginx --destination ${{ github.workspace }}/docs
         helm package charts/pod-reaper
-        
+        helm package charts/pod-reaper --destination ${{ github.workspace }}/docs  
+
     # The package is also added to /tmp just so we can easily get the name in the 'Get Package Name' step.  
     - name: Package Chart 
       run: |
@@ -70,16 +80,8 @@ jobs:
       run: | 
         echo "package=$(ls /tmp | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
         
-#     - name: Get packagename without extension
-#       id: packageName
-#       run: | 
-#         BASE=${{ steps.package.outputs.package }}
-#         echo $BASE
-#         pNAME=${BASE%.*}
-#         echo $pNAME
-#         echo "packageName=$pNAME" >> "$GITHUB_OUTPUT" 
-        
     - name: Commit index changes to develp branch
+      if: ${{ inputs.appRepo != 'helxplatform/helx-chart'}}
       uses: EndBug/add-and-commit@v9
       env:
         GH_TOKEN: ${{ github.token }}
@@ -88,6 +90,18 @@ jobs:
         author_name: ${{ github.actor}}
         message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
         add: "${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/${{ steps.package.outputs.package }}"
+
+    - name: Commit Helx-Charts individual packages
+      if: ${{ inputs.appRepo == 'helxplatform/helx-chart'}}
+      uses: EndBug/add-and-commit@v9
+      env:
+        GH_TOKEN: ${{ github.token }}
+      with:
+        new_branch: origin actions/${{ steps.package.outputs.package }}
+        author_name: ${{ github.actor}}
+        message: "Adding helx-chart apps, ${{ steps.package.outputs.package }} and index.yaml"
+        add: "${{ github.workspace }}/docs/*"
+    
 
     - name: Create New CI Pull Request
       env:

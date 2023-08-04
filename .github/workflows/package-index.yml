@@ -72,8 +72,9 @@ jobs:
     # See: https://github.com/helm/helm/issues/4482#issuecomment-452013778 
     - name: Index Package
       run: | 
-        helm repo index --url=https://helxplatform.github.io/helm-charts/ --merge ${{ github.workspace }}/docs/index.yaml /tmp/${{ github.repository_owner }}
+        helm repo index --url=https://helxplatform.github.io/helm-charts/ --merge ${{ github.workspace }}/docs/index.yaml /tmp
         mv /tmp/${{ github.repository_owner }}/index.yaml ${{ github.workspace }}/docs
+
 
     - name: Get package name
       id: package

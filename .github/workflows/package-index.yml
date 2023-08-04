@@ -79,7 +79,7 @@ jobs:
     - name: Get package name
       id: package
       run: | 
-        echo "package=$(ls /tmp | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
+        echo "package=$(ls /tmp/${{ github.repository_owner }}/ | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
         
     - name: Commit index changes to develp branch
       if: ${{ inputs.appRepo != 'helxplatform/helx-chart'}}

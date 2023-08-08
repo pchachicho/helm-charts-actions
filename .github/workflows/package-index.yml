@@ -68,25 +68,26 @@ jobs:
         helm repo add helx-charts https://helxplatform.github.io/helm-charts
         helm repo update helx-charts
 
-    # The package is also added to /tmp just so we can easily get the name in the 'Get Package Name' step.  
+    # The package is also added to /tmp/pkg just so we can easily get the name in the 'Get Package Name' step and to 
+    # ensure index step works as expected.  
     - name: Package Chart 
       run: |
         cd /tmp
         helm package --dependency-update ./${{ github.repository_owner }} --destination ${{ github.workspace }}/docs 
-        helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp/${{ github.repository_owner }}/
+        helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp/pkg
 
     # The flag --merge doesn't have good documentation in helm official site
     # See: https://github.com/helm/helm/issues/4482#issuecomment-452013778 
     - name: Index Package
       run: | 
-        helm repo index --url=https://helxplatform.github.io/helm-charts/ --merge ${{ github.workspace }}/docs/index.yaml /tmp/${{ github.repository_owner }}/
-        mv /tmp/${{ github.repository_owner }}/index.yaml ${{ github.workspace }}/docs
+        helm repo index --url=https://helxplatform.github.io/helm-charts/ --merge ${{ github.workspace }}/docs/index.yaml /tmp/pkg
+        mv /tmp/package/index.yaml ${{ github.workspace }}/docs
 
 
     - name: Get package name
       id: package
       run: | 
-        echo "package=$(ls /tmp/${{ github.repository_owner }}/ | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
+        echo "package=$(ls /tmp/pkg | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
         
     - name: Commit index changes to develp branch
       if: ${{ inputs.appRepo != 'helxplatform/helx-chart'}}

@@ -61,6 +61,13 @@ jobs:
         helm package charts/pod-reaper
         helm package charts/pod-reaper --destination ${{ github.workspace }}/docs  
 
+    # Helx-Chart is needed for Search-Chart dependencies so adding here.
+    - name: Add Helx-Chart
+      if: ${{ inputs.appRepo == 'helxplatform/search-chart'}}
+      run: |
+        helm repo add helx-charts https://helxplatform.github.io/helm-charts
+        helm repo update helx-charts
+
     # The package is also added to /tmp just so we can easily get the name in the 'Get Package Name' step.  
     - name: Package Chart 
       run: |
@@ -108,4 +115,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh pr create --fill --base develop --head actions/${{ steps.package.outputs.package }} --reviewer ${{ inputs.actor }} --reviewer pj-linebaugh --reviewer waTeim
+        gh pr create --fill --base develop --head actions/${{ steps.package.outputs.package }} --reviewer ${{ inputs.actor }} --reviewer pj-linebaugh --reviewer waTeim --reviewer YaphetKG

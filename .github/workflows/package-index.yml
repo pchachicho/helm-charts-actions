@@ -106,7 +106,7 @@ jobs:
       env:
         GH_TOKEN: ${{ github.token }}
       with:
-        new_branch: origin actions/${{ steps.package.outputs.package }}
+        new_branch: actions/${{ steps.package.outputs.package }}
         author_name: ${{ github.actor}}
         message: "Adding helx-chart apps, ${{ steps.package.outputs.package }} and index.yaml"
         add: "${{ github.workspace }}/docs/*"

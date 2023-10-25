@@ -59,7 +59,9 @@ jobs:
         helm package charts/nginx
         helm package charts/nginx --destination ${{ github.workspace }}/docs
         helm package charts/pod-reaper
-        helm package charts/pod-reaper --destination ${{ github.workspace }}/docs  
+        helm package charts/pod-reaper --destination ${{ github.workspace }}/docs
+        helm package charts/resty
+        helm package charts/resty --destination ${{ github.workspace }}/docs  
 
     # Helx-Chart is needed for Search-Chart dependencies so adding here.
     - name: Add Helx-Chart

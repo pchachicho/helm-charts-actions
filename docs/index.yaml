@@ -3269,6 +3269,16 @@ entries:
     version: 0.2-dev
   ui:
   - apiVersion: v2
+    appVersion: 6.0.0
+    created: "2023-10-27T21:04:53.0187355Z"
+    description: A Helm chart for Kubernetes
+    digest: c64679d49f62e3e528ddc384fe6bffec1677c9a4b3e4256db5506f57e130a0d2
+    name: ui
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/ui-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
     appVersion: 5.0.0
     created: "2023-09-19T15:42:50.174893704Z"
     description: A Helm chart for Kubernetes
@@ -3348,4 +3358,4 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-27T20:45:21.543492017Z"
+generated: "2023-10-27T21:04:53.01762713Z"

@@ -46,7 +46,7 @@ jobs:
         helm repo update
         helm dependency update
         echo "Check AppVersions Before Merging to Docs"
-        HELX_CHART=("ambassador", "backup-pvc-cronjob", "image-utils","nfs-server","nfsrods","nginx", "pod-reaper","resty" )
+        HELX_CHART=("ambassador" "backup-pvc-cronjob" "image-utils" "nfs-server" "nfsrods" "nginx" "pod-reaper" "resty" )
         for APP in ${HELX_CHART[@]}; do
           helm package --dependency-update charts/$APP
           DOCS_VERSION=$(ls docs | grep $APP | sort -V | tail -n 1)

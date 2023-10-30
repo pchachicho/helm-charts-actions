@@ -41,9 +41,7 @@ jobs:
     - name: Check for Helx-Charts Package Updates
       if: ${{ inputs.appRepo == 'helxplatform/helx-chart'}}
       run: |
-        cd /tmp/${{ github.repository_owner }}
-        helm repo add helx-charts https://helxplatform.github.io/helm-charts
-        helm repo update 
+        cd /tmp/${{ github.repository_owner }} 
         helm dependency update ./charts/image-utils
         helm dependency update
         helm package charts/ambassador

@@ -56,7 +56,8 @@ jobs:
             helm package --dependency-update charts/$APP --destination ${{ github.workspace }}/docs
           else
             echo "$DOCS_VERSION is same as $CURRENT_VERSION, skipping add to docs ..."
-          fi  
+          fi
+        done 
 
     # Helx-Chart is needed for Search-Chart dependencies so adding here.
     - name: Add Helx-Chart

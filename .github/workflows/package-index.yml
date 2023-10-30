@@ -42,10 +42,9 @@ jobs:
       if: ${{ inputs.appRepo == 'helxplatform/helx-chart'}}
       run: |
         cd /tmp/${{ github.repository_owner }}
-        # helm repo add helx-charts https://helxplatform.github.io/helm-charts
-        # helm repo update
-        # helm dependency update ./charts/image-utils
-        # helm dependency update
+        helm repo add helx-charts https://helxplatform.github.io/helm-charts
+        helm repo update
+        helm dependency update
         helm package --dependency-update charts/ambassador
         helm package --dependency-update charts/ambassador --destination ${{ github.workspace }}/docs
         helm package --dependency-update charts/backup-pvc-cronjob

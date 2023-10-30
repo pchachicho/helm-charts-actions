@@ -41,25 +41,27 @@ jobs:
     - name: Check for Helx-Charts Package Updates
       if: ${{ inputs.appRepo == 'helxplatform/helx-chart'}}
       run: |
-        cd /tmp/${{ github.repository_owner }} 
-        helm dependency update ./charts/image-utils
-        helm dependency update
-        helm package charts/ambassador
-        helm package charts/ambassador --destination ${{ github.workspace }}/docs
-        helm package charts/backup-pvc-cronjob
-        helm package charts/backup-pvc-cronjob --destination ${{ github.workspace }}/docs
-        helm package charts/image-utils
-        helm package charts/image-utils --destination ${{ github.workspace }}/docs
-        helm package charts/nfs-server
-        helm package charts/nfs-server --destination ${{ github.workspace }}/docs
-        helm package charts/nfsrods
-        helm package charts/nfsrods --destination ${{ github.workspace }}/docs
-        helm package charts/nginx
-        helm package charts/nginx --destination ${{ github.workspace }}/docs
-        helm package charts/pod-reaper
-        helm package charts/pod-reaper --destination ${{ github.workspace }}/docs
-        helm package charts/resty
-        helm package charts/resty --destination ${{ github.workspace }}/docs  
+        cd /tmp/${{ github.repository_owner }}
+        # helm repo add helx-charts https://helxplatform.github.io/helm-charts
+        # helm repo update
+        # helm dependency update ./charts/image-utils
+        # helm dependency update
+        helm package --dependency-update charts/ambassador
+        helm package --dependency-update charts/ambassador --destination ${{ github.workspace }}/docs
+        helm package --dependency-update charts/backup-pvc-cronjob
+        helm package --dependency-update charts/backup-pvc-cronjob --destination ${{ github.workspace }}/docs
+        helm package --dependency-update charts/image-utils
+        helm package --dependency-update charts/image-utils --destination ${{ github.workspace }}/docs
+        helm package --dependency-update charts/nfs-server
+        helm package --dependency-update charts/nfs-server --destination ${{ github.workspace }}/docs
+        helm package --dependency-update charts/nfsrods
+        helm package --dependency-update charts/nfsrods --destination ${{ github.workspace }}/docs
+        helm package --dependency-update charts/nginx
+        helm package --dependency-update charts/nginx --destination ${{ github.workspace }}/docs
+        helm package --dependency-update charts/pod-reaper
+        helm package --dependency-update charts/pod-reaper --destination ${{ github.workspace }}/docs
+        helm package --dependency-update charts/resty
+        helm package --dependency-update charts/resty --destination ${{ github.workspace }}/docs  
 
     # Helx-Chart is needed for Search-Chart dependencies so adding here.
     - name: Add Helx-Chart
@@ -109,7 +111,10 @@ jobs:
         new_branch: actions/${{ steps.package.outputs.package }}
         author_name: ${{ github.actor}}
         message: "Adding helx-chart apps, ${{ steps.package.outputs.package }} and index.yaml"
-        add: "${{ github.workspace }}/docs/*"
+        add: "-A"
+          
+          
+                      
     
 
     - name: Create New CI Pull Request

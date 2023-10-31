@@ -54,6 +54,7 @@ jobs:
           echo "INFO: DOCS_VERSION: $DOCS_VERSION CHART_VERSION: $CURRENT_VERSION"
           if [[ $DOCS_VERSION != $CHART_VERSION ]]; then
             helm package --dependency-update charts/$APP --destination ${{ github.workspace }}/docs
+            helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp/pkg
           else
             echo "$DOCS_VERSION is same as $CHART_VERSION, skipping add to docs ..."
           fi
@@ -109,10 +110,6 @@ jobs:
         message: "Adding helx-chart apps, ${{ steps.package.outputs.package }} and index.yaml"
         add: "-A"
           
-          
-                      
-    
-
     - name: Create New CI Pull Request
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

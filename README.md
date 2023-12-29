@@ -9,6 +9,8 @@ Helm charts for HeLx components
 * [tranql-chart](https://github.com/helxplatform/tranql-chart)
 * [tycho-api-chart](https://github.com/helxplatform/tycho-api-chart)
 * [ui-chart](https://github.com/helxplatform/ui-chart)
+* [helx-chart](https://github.com/helxplatform/helx-chart)
+* [appstore-sockets-chart](https://github.com/helxplatform/appstore-sockets-chart)
 
 ## Using the repo
 
@@ -23,9 +25,17 @@ Our version control strategy broadly follows a [GitFlow](https://nvie.com/posts/
 
 There are three components to making changes to a chart: development, cutting a release, and publishing that release.
 
-###  Development
+### Github Actions 
+We employ Github Actions to Cut and Publish new releases of the Helm-Charts repository. 
 
-### Cutting a Release
+To setup an existing component-chart for integration with this repository, please speak to the Architecture Group's DevOps Team. 
+A Trigger-Helm-Charts.yml action will be added to the component chart which instructs this repository to pull in new component-chart changes after each release. See helx-charts [Trigger-Helm-Charts.yml action](https://github.com/helxplatform/search-chart/blob/develop/.github/workflows/trigger-helm-charts.yml) for example.  
+
+Upon each new release from a component-chart, the Trigger-Helm-Charts.yml action will be run, triggering the [helm-charts repository actions](https://github.com/helxplatform/helm-charts/blob/master/.github/workflows/package-index.yml) to pull in the new component-chart release, creating a Pull Request to Helm-Charts' Develop branch. The user who triggered the component-chart actions, thus causing helm-charts to update itself will be added to the Pull Request to view and approve the newly added packages and changes along with the core maintainers of this Chart. 
+
+####  Manual Steps for Helm-Charts Development [deprecated]
+
+###### Cutting a Release [deprecated]
 
 1. Create a new release branch off of develop for the target version: `git checkout release/appstore-chart-0.1`
 2. Update the chart version to an rc version in Chart.yaml: `version: 0.1.rc0`
@@ -34,7 +44,7 @@ There are three components to making changes to a chart: development, cutting a 
 5. Create a tag for the release: `git tag 0.1.0 && git push --tags`
 6. Merge the main branch back into develop and bump the version to a dev version: `version: 0.2.dev`
 
-### Publishing a release
+##### Publishing a release [deprecated]
 
 1. Change into the appropriate directory: `cd charts/appstore`
 2. Checkout the appropriate version or branch: `git checkout 0.1.0` 

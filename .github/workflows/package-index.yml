@@ -51,10 +51,10 @@ jobs:
           helm package --dependency-update charts/$APP
           DOCS_VERSION=$(ls ${{ github.workspace }}/docs | grep $APP | sort -V | tail -n 1)
           CHART_VERSION=$(ls /tmp/${{ github.repository_owner }} | grep -i '.tgz' | grep $APP )
-          echo "INFO: DOCS_VERSION: $DOCS_VERSION CHART_VERSION: $CURRENT_VERSION"
+          echo "INFO: DOCS_VERSION: $DOCS_VERSION CHART_VERSION: $CHART_VERSION"
           if [[ $DOCS_VERSION != $CHART_VERSION ]]; then
             helm package --dependency-update charts/$APP --destination ${{ github.workspace }}/docs
-            helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp/pkg
+            helm package --dependency-update /tmp/${{ github.repository_owner }} --destination /tmp/pkg
           else
             echo "$DOCS_VERSION is same as $CHART_VERSION, skipping add to docs ..."
           fi

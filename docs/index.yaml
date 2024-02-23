@@ -513,73 +513,6 @@ entries:
   helx:
   - apiVersion: v2
     appVersion: 3.5.1
-    created: "2024-02-23T13:24:27.891657309Z"
-    dependencies:
-    - condition: ambassador.enabled
-      name: ambassador
-      repository: ""
-      version: ^0.2.0
-    - condition: appstore.enabled
-      name: appstore
-      repository: '@helx-charts'
-      version: ^4.0.0
-    - condition: backup-pvc-cronjob.enabled
-      name: backup-pvc-cronjob
-      repository: ""
-      version: ^0.2.1
-    - condition: image-utils.enabled
-      name: image-utils
-      repository: ""
-      version: ^1.0.0
-    - condition: monitoring.enabled
-      name: monitoring
-      repository: '@helx-charts'
-      version: ^0.2.0
-    - condition: nfs-server.enabled
-      name: nfs-server
-      repository: ""
-      version: ^0.2.0
-    - condition: nfsrods.enabled
-      name: nfsrods
-      repository: ""
-      version: ^2.0.0
-    - condition: nginx.enabled
-      name: nginx
-      repository: ""
-      version: ^1.0.0
-    - condition: pod-reaper.enabled
-      name: pod-reaper
-      repository: ""
-      version: ^0.2.0
-    - condition: resty.enabled
-      name: resty
-      repository: ""
-      version: ^1.0.0
-    - condition: search.enabled
-      name: search
-      repository: '@helx-charts'
-      version: ^2.0.0
-    - condition: tycho-api.enabled
-      name: tycho-api
-      repository: '@helx-charts'
-      version: 0.2-dev
-    - condition: ui.enabled
-      name: ui
-      repository: '@helx-charts'
-      version: ^1.3.0
-    - condition: appstore-sockets.enabled
-      name: appstore-sockets
-      repository: '@helx-charts'
-      version: ^2.0.0
-    description: A Helm chart for deploying HeLx to Kubernetes.
-    digest: 5cdab353be41b76a083a13f612795b00171df363b07b1ffbe2e2b696b7f71b32
-    name: helx
-    type: application
-    urls:
-    - https://helxplatform.github.io/helm-charts/helx-4.2.1.tgz
-    version: 4.2.1
-  - apiVersion: v2
-    appVersion: 3.5.1
     created: "2024-02-22T20:17:28.881558691Z"
     dependencies:
     - condition: ambassador.enabled
@@ -3899,4 +3832,4 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-23T13:24:27.833239474Z"
+generated: "2024-02-22T20:17:28.824537378Z"

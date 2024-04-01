@@ -18,5 +18,5 @@ jobs:
     uses: pchachicho/renci-github-actions/.github/workflows/package-index.yml@main
     secrets: inherit
     with:
-      appRepo: ${{ github.repository }}
-      actor: ${{ github.actor }}
+      appRepo: ${{ inputs.appRepo }}
+      actor: ${{ inputs.actor }}
